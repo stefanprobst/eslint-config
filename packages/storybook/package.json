@@ -1,0 +1,12 @@
+{
+  "name": "@stefanprobst/eslint-config-storybook",
+  "version": "1.0.0",
+  "licence": "MIT",
+  "main": "./config.js",
+  "exports": {
+    ".": "./config.js"
+  },
+  "dependencies": {
+    "eslint-plugin-storybook": ">=0.6.3"
+  }
+}

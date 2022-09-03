@@ -1,0 +1,12 @@
+{
+  "name": "@stefanprobst/eslint-config-playwright",
+  "version": "1.0.0",
+  "licence": "MIT",
+  "main": "./config.js",
+  "exports": {
+    ".": "./config.js"
+  },
+  "dependencies": {
+    "eslint-plugin-playwright": ">=0.10.0"
+  }
+}

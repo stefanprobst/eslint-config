@@ -1,0 +1,33 @@
+{
+  "private": true,
+  "scripts": {
+    "format": "prettier . --cache --check --ignore-path .gitignore",
+    "format:fix": "pnpm run format --write",
+    "prepare": "simple-git-hooks || exit 0",
+    "validate": "pnpm run format"
+  },
+  "engines": {
+    "node": ">=16",
+    "pnpm": ">=7"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.0.3",
+    "@stefanprobst/commitlint-config": "^1.0.2",
+    "@stefanprobst/prettier-config": "^2.0.2",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1",
+    "simple-git-hooks": "^2.8.0"
+  },
+  "commitlint": {
+    "extends": "@stefanprobst/commitlint-config"
+  },
+  "lint-staged": {
+    "*.@(js|json|md|yaml)": "prettier --cache --write"
+  },
+  "prettier": "@stefanprobst/prettier-config",
+  "simple-git-hooks": {
+    "commit-msg": "pnpm exec commitlint --edit",
+    "pre-commit": "pnpm exec lint-staged",
+    "pre-push": "pnpm run validate"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "@stefanprobst/eslint-config-next",
+  "version": "7.0.0",
+  "licence": "MIT",
+  "main": "./config.js",
+  "exports": {
+    ".": "./config.js"
+  },
+  "dependencies": {
+    "@next/eslint-plugin-next": ">=12.2.5"
+  }
+}
