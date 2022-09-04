@@ -9,6 +9,12 @@ const config = {
       },
     },
     {
+      files: ['**/*.d.ts'],
+      rules: {
+        'import/no-default-export': 'off',
+      },
+    },
+    {
       files: ['./src/pages/**/*.page.tsx'],
       rules: {
         '@typescript-eslint/no-namespace': 'off',
