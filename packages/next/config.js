@@ -9,7 +9,7 @@ const config = {
       },
     },
     {
-      files: ['**/*.d.ts'],
+      files: ['*.config.ts', '*.config.mjs', '**/*.d.ts'],
       rules: {
         'import/no-default-export': 'off',
       },
