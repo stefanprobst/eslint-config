@@ -1,6 +1,6 @@
 {
   "name": "@stefanprobst/eslint-config",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "licence": "MIT",
   "main": "./config.js",
   "exports": {
@@ -13,7 +13,7 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-import-resolver-typescript": "^3.4.0",
     "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-simple-import-sort": "^7.0.0",
+    "eslint-plugin-simple-import-sort": "^8.0.0",
     "eslint-plugin-typescript-enum": "^2.1.0"
   },
   "peerDependencies": {
