@@ -99,6 +99,14 @@ importers:
     dependencies:
       eslint-plugin-storybook: 0.6.4
 
+  packages/vue:
+    specifiers:
+      eslint-plugin-vue: ^9.4.0
+      eslint-plugin-vuejs-accessibility: ^1.2.0
+    dependencies:
+      eslint-plugin-vue: 9.4.0
+      eslint-plugin-vuejs-accessibility: 1.2.0
+
 packages:
   /@astrojs/compiler/0.23.3:
     resolution:
@@ -1086,6 +1094,13 @@ packages:
       }
     dev: false
 
+  /boolbase/1.0.0:
+    resolution:
+      {
+        integrity: sha512-JZOSA7Mo9sNGB8+UjSgzdLtokWAky1zbztM3WRLCbZ70/3cTANmQmOdR7y2g+J0e2WXywy1yS468tY+IruqEww==,
+      }
+    dev: false
+
   /brace-expansion/1.1.11:
     resolution:
       {
@@ -1615,6 +1630,13 @@ packages:
       }
     dev: true
 
+  /emoji-regex/10.1.0:
+    resolution:
+      {
+        integrity: sha512-xAEnNCT3w2Tg6MA7ly6QqYJvEoY1tm9iIjJ3yMKK9JPlWuRHAMoe5iETwQnx3M9TVbFMfsrBgWKR+IsmswwNjg==,
+      }
+    dev: false
+
   /emoji-regex/8.0.0:
     resolution:
       {
@@ -2111,6 +2133,41 @@ packages:
       - typescript
     dev: false
 
+  /eslint-plugin-vue/9.4.0:
+    resolution:
+      {
+        integrity: sha512-Nzz2QIJ8FG+rtJaqT/7/ru5ie2XgT9KCudkbN0y3uFYhQ41nuHEaboLAiqwMcK006hZPQv/rVMRhUIwEGhIvfQ==,
+      }
+    engines: { node: ^14.17.0 || >=16.0.0 }
+    peerDependencies:
+      eslint: ^6.2.0 || ^7.0.0 || ^8.0.0
+    dependencies:
+      eslint-utils: 3.0.0
+      natural-compare: 1.4.0
+      nth-check: 2.1.1
+      postcss-selector-parser: 6.0.10
+      semver: 7.3.7
+      vue-eslint-parser: 9.1.0
+      xml-name-validator: 4.0.0
+    transitivePeerDependencies:
+      - supports-color
+    dev: false
+
+  /eslint-plugin-vuejs-accessibility/1.2.0:
+    resolution:
+      {
+        integrity: sha512-wF7kT22lS2VOmIpDeI65bnFFKFgESEEpI+CWKr43mdfDRywA4sCk7cKhtZsvfbPOtKO0GDlnpFxZbOIGsFn7IQ==,
+      }
+    peerDependencies:
+      eslint: ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0
+    dependencies:
+      aria-query: 5.0.0
+      emoji-regex: 10.1.0
+      vue-eslint-parser: 9.1.0
+    transitivePeerDependencies:
+      - supports-color
+    dev: false
+
   /eslint-scope/5.1.1:
     resolution:
       {
@@ -2120,6 +2177,17 @@ packages:
     dependencies:
       esrecurse: 4.3.0
       estraverse: 4.3.0
+    dev: false
+
+  /eslint-scope/7.1.1:
+    resolution:
+      {
+        integrity: sha512-QKQM/UXpIiHcLqJ5AOyIW7XZmzjkzQXYE54n1++wb0u9V/abW3l9uQnxX8Z5Xd18xyKIMTUAyQ0k1e8pz6LUrw==,
+      }
+    engines: { node: ^12.22.0 || ^14.17.0 || >=16.0.0 }
+    dependencies:
+      esrecurse: 4.3.0
+      estraverse: 5.3.0
     dev: false
 
   /eslint-utils/2.1.0:
@@ -2178,6 +2246,16 @@ packages:
       acorn: 8.8.0
       acorn-jsx: 5.3.2_acorn@8.8.0
       eslint-visitor-keys: 3.3.0
+    dev: false
+
+  /esquery/1.4.0:
+    resolution:
+      {
+        integrity: sha512-cCDispWt5vHHtwMY2YrAQ4ibFkAL8RbH5YGBnZBc90MolvvfkkQcJro/aZiAQUlQ3qgrYS6D6v8Gc5G5CQsc9w==,
+      }
+    engines: { node: '>=0.10' }
+    dependencies:
+      estraverse: 5.3.0
     dev: false
 
   /esrecurse/4.3.0:
@@ -3867,6 +3945,13 @@ packages:
     hasBin: true
     dev: false
 
+  /natural-compare/1.4.0:
+    resolution:
+      {
+        integrity: sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==,
+      }
+    dev: false
+
   /normalize-package-data/2.5.0:
     resolution:
       {
@@ -3919,6 +4004,15 @@ packages:
     dependencies:
       path-key: 4.0.0
     dev: true
+
+  /nth-check/2.1.1:
+    resolution:
+      {
+        integrity: sha512-lqjrjmaOoAnWfMmBPL+XNnynZh2+swxiX3WUE0s4yEHI6m+AwrK2UZOimIRl3X/4QctVqS8AiZjFqyOGrMXb/w==,
+      }
+    dependencies:
+      boolbase: 1.0.0
+    dev: false
 
   /object-assign/4.1.1:
     resolution:
@@ -5285,6 +5379,26 @@ packages:
       vfile-message: 3.1.2
     dev: false
 
+  /vue-eslint-parser/9.1.0:
+    resolution:
+      {
+        integrity: sha512-NGn/iQy8/Wb7RrRa4aRkokyCZfOUWk19OP5HP6JEozQFX5AoS/t+Z0ZN7FY4LlmWc4FNI922V7cvX28zctN8dQ==,
+      }
+    engines: { node: ^14.17.0 || >=16.0.0 }
+    peerDependencies:
+      eslint: '>=6.0.0'
+    dependencies:
+      debug: 4.3.4
+      eslint-scope: 7.1.1
+      eslint-visitor-keys: 3.3.0
+      espree: 9.3.3
+      esquery: 1.4.0
+      lodash: 4.17.21
+      semver: 7.3.7
+    transitivePeerDependencies:
+      - supports-color
+    dev: false
+
   /which-boxed-primitive/1.0.2:
     resolution:
       {
@@ -5337,6 +5451,14 @@ packages:
       {
         integrity: sha512-l4Sp/DRseor9wL6EvV2+TuQn63dMkPjZ/sp9XkghTEbV9KlPS1xUsZ3u7/IQO4wxtcFB4bgpQPRcR3QCvezPcQ==,
       }
+    dev: false
+
+  /xml-name-validator/4.0.0:
+    resolution:
+      {
+        integrity: sha512-ICP2e+jsHvAj2E2lIHxa5tjXRlKDJo4IdvPvCXbXQGdzSfmSpNVyIKMvoZHjDY9DP0zV17iI85o90vRFXNccRw==,
+      }
+    engines: { node: '>=12' }
     dev: false
 
   /y18n/5.0.8:
