@@ -1,7 +1,8 @@
-const project = require('@stefanprobst/eslint-config/project')
-
 /** @type {import('eslint').Linter.Config} */
 const config = {
+  parserOptions: {
+    extraFileExtensions: ['.vue'],
+  },
   overrides: [
     {
       files: ['**/*.vue'],
@@ -12,8 +13,6 @@ const config = {
       ],
       parserOptions: {
         parser: '@typescript-eslint/parser',
-        extraFileExtensions: ['.vue'],
-        project,
       },
       rules: {
         'vuejs-accessibility/label-has-for': [

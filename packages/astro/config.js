@@ -1,7 +1,8 @@
-const project = require('@stefanprobst/eslint-config/project')
-
 /** @type {import('eslint').Linter.Config} */
 const config = {
+  parserOptions: {
+    extraFileExtensions: ['.astro'],
+  },
   overrides: [
     {
       files: ['**/*.astro'],
@@ -9,8 +10,6 @@ const config = {
       parser: 'astro-eslint-parser',
       parserOptions: {
         parser: '@typescript-eslint/parser',
-        extraFileExtensions: ['.astro'],
-        project,
       },
       rules: {
         'astro/jsx-a11y/anchor-is-valid': [

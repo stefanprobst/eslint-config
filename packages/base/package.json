@@ -1,11 +1,10 @@
 {
   "name": "@stefanprobst/eslint-config",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "licence": "MIT",
   "main": "./config.js",
   "exports": {
     ".": "./config.js",
-    "./project": "./project.js",
     "./type-checking": "./config-type-checking.js"
   },
   "dependencies": {
