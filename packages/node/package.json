@@ -8,5 +8,8 @@
   },
   "dependencies": {
     "eslint-plugin-n": "^15.2.4"
+  },
+  "peerDependencies": {
+    "@stefanprobst/eslint-config": "*"
   }
 }

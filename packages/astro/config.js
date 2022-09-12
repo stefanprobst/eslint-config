@@ -5,7 +5,7 @@ const config = {
   overrides: [
     {
       files: ['**/*.astro'],
-      extends: ['plugin:astro/recommended', 'plugin:astro/jsx-a11y-recommended'],
+      extends: ['plugin:astro/recommended', 'plugin:astro/jsx-a11y-recommended', 'prettier'],
       parser: 'astro-eslint-parser',
       parserOptions: {
         parser: '@typescript-eslint/parser',

@@ -8,5 +8,8 @@
   },
   "dependencies": {
     "eslint-plugin-cypress": "^2.12.1"
+  },
+  "peerDependencies": {
+    "@stefanprobst/eslint-config": "*"
   }
 }

@@ -8,5 +8,9 @@
   },
   "dependencies": {
     "@next/eslint-plugin-next": ">=12.2.5"
+  },
+  "peerDependencies": {
+    "@stefanprobst/eslint-config": "*",
+    "@stefanprobst/eslint-config-react": "*"
   }
 }
