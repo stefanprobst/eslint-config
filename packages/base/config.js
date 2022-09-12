@@ -1,13 +1,4 @@
-const project = [
-  './tsconfig.json',
-  './tsconfig.*.json',
-  './apps/*/tsconfig.json',
-  './apps/*/tsconfig.*.json',
-  './examples/*/tsconfig.json',
-  './examples/*/tsconfig.*.json',
-  './packages/*/tsconfig.json',
-  './packages/*/tsconfig.*.json',
-]
+const project = require('./project')
 
 /** @type {import('eslint').Linter.Config} */
 const config = {
@@ -83,3 +74,4 @@ const config = {
 }
 
 module.exports = config
+module.exports.project = project
