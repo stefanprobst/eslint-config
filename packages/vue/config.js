@@ -15,6 +15,19 @@ const config = {
         extraFileExtensions: ['.vue'],
         project,
       },
+      rules: {
+        'vuejs-accessibility/label-has-for': [
+          'error',
+          {
+            required: {
+              some: ['nesting', 'id'],
+            },
+          },
+        ],
+        'vuejs-accessibility/no-autofocus': ['error', { ignoreNonDOM: true }],
+        'vuejs-accessibility/no-onchange': 'off',
+        'vuejs-accessibility/no-redundant-roles': ['error', { ul: ['list'], ol: ['list'] }],
+      },
     },
   ],
 }
