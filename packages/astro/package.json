@@ -1,6 +1,6 @@
 {
   "name": "@stefanprobst/eslint-config-astro",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "licence": "MIT",
   "main": "./config.js",
   "exports": {
@@ -9,5 +9,8 @@
   "dependencies": {
     "eslint-plugin-astro": ">=0.18.0",
     "eslint-plugin-jsx-a11y": "^6.6.1"
+  },
+  "peerDependencies": {
+    "@stefanprobst/eslint-config": "*"
   }
 }
