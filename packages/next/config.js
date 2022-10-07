@@ -21,6 +21,12 @@ const config = {
         'import/no-default-export': 'off',
       },
     },
+    {
+      files: ['./src/pages/**/*.api.ts'],
+      rules: {
+        'import/no-default-export': 'off',
+      },
+    },
   ],
 }
 
