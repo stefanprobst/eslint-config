@@ -21,6 +21,7 @@ const config = {
         'jsx-a11y/no-redundant-roles': ['error', { ul: ['list'], ol: ['list'] }],
         'react/boolean-prop-naming': 'error',
         'react/function-component-definition': 'error',
+        'react/jsx-no-leaked-render': 'error',
         'react/prop-types': 'off',
       },
     },
