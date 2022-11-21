@@ -53,8 +53,11 @@ const config = {
     'no-throw-literal': 'error',
     'prefer-arrow-callback': ['error', { allowNamedFunctions: true }],
     '@typescript-eslint/array-type': ['error', { default: 'generic' }],
-    '@typescript-eslint/consistent-type-exports': 'error',
-    '@typescript-eslint/consistent-type-imports': 'error',
+    '@typescript-eslint/consistent-type-exports': [
+      'error',
+      { fixMixedExportsWithInlineTypeSpecifier: true },
+    ],
+    '@typescript-eslint/consistent-type-imports': ['error', { fixStyle: 'inline-type-imports' }],
     '@typescript-eslint/explicit-module-boundary-types': 'error',
     '@typescript-eslint/no-unnecessary-condition': 'error',
     '@typescript-eslint/no-unused-vars': [
