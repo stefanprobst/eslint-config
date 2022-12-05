@@ -68,7 +68,8 @@ const config = {
     '@typescript-eslint/sort-type-union-intersection-members': 'error',
     '@typescript-eslint/strict-boolean-expressions': 'error',
     '@typescript-eslint/switch-exhaustiveness-check': 'error',
-    "import/consistent-type-specifier-style": "error",
+    // TODO: requires new release of eslint-plugin-import
+    // "import/consistent-type-specifier-style": "error",
     'import/first': 'error',
     'import/newline-after-import': 'error',
     'import/no-anonymous-default-export': 'error',
