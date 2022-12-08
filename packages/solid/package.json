@@ -1,0 +1,16 @@
+{
+  "name": "@stefanprobst/eslint-config-solid",
+  "version": "1.0.0",
+  "licence": "MIT",
+  "main": "./config.js",
+  "exports": {
+    ".": "./config.js"
+  },
+  "dependencies": {
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-solid": "^0.9.1"
+  },
+  "peerDependencies": {
+    "@stefanprobst/eslint-config": "*"
+  }
+}
