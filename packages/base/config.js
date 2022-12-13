@@ -59,7 +59,7 @@ const config = {
     ],
     '@typescript-eslint/consistent-type-imports': ['error', { fixStyle: 'inline-type-imports' }],
     '@typescript-eslint/explicit-module-boundary-types': 'error',
-    '@typescript-eslint/no-empty-interface': ['error', { allowSingleExtends: false }],
+    '@typescript-eslint/no-empty-interface': ['error', { allowSingleExtends: true }],
     '@typescript-eslint/no-unnecessary-condition': 'error',
     '@typescript-eslint/no-unused-vars': [
       'error',
