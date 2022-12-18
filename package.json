@@ -3,6 +3,7 @@
 	"scripts": {
 		"changeset:add": "changeset add",
 		"changeset:status": "changeset status --verbose",
+		"ci:release": "changeset publish",
 		"format:check": "prettier . --cache --check --ignore-path .gitignore",
 		"format:fix": "pnpm run format:check --write",
 		"prepare": "run-s setup",
