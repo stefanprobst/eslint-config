@@ -1,42 +1,41 @@
 {
-  "private": true,
-  "scripts": {
-    "changeset:add": "changeset add",
-    "changeset:publish": "changeset publish && git push --follow-tags",
-    "changeset:version": "changeset version",
-    "format:check": "prettier . --cache --check --ignore-path .gitignore",
-    "format:fix": "pnpm run format:check --write",
-    "prepare": "run-s setup",
-    "setup": "simple-git-hooks || exit 0",
-    "types:check": "tsc --noEmit",
-    "validate": "run-p format:check types:check"
-  },
-  "engines": {
-    "node": ">=18",
-    "pnpm": ">=7"
-  },
-  "devDependencies": {
-    "@changesets/changelog-github": "^0.4.7",
-    "@changesets/cli": "^2.25.2",
-    "@commitlint/cli": "^17.0.3",
-    "@stefanprobst/commitlint-config": "^1.0.2",
-    "@stefanprobst/prettier-config": "^2.0.2",
-    "lint-staged": "^13.0.3",
-    "npm-run-all": "^4.1.5",
-    "prettier": "^2.7.1",
-    "simple-git-hooks": "^2.8.0",
-    "typescript": "^4.9.4"
-  },
-  "commitlint": {
-    "extends": "@stefanprobst/commitlint-config"
-  },
-  "lint-staged": {
-    "*": "prettier --cache --ignore-unknown --write"
-  },
-  "prettier": "@stefanprobst/prettier-config",
-  "simple-git-hooks": {
-    "commit-msg": "pnpm exec commitlint --edit",
-    "pre-commit": "pnpm exec lint-staged",
-    "pre-push": "pnpm run validate"
-  }
+	"private": true,
+	"scripts": {
+		"changeset:add": "changeset add",
+		"changeset:status": "changeset status --verbose",
+		"format:check": "prettier . --cache --check --ignore-path .gitignore",
+		"format:fix": "pnpm run format:check --write",
+		"prepare": "run-s setup",
+		"setup": "simple-git-hooks || exit 0",
+		"types:check": "tsc --noEmit",
+		"validate": "run-p format:check types:check"
+	},
+	"engines": {
+		"node": ">=18",
+		"pnpm": ">=7"
+	},
+	"devDependencies": {
+		"@changesets/changelog-github": "^0.4.8",
+		"@changesets/cli": "^2.26.0",
+		"@commitlint/cli": "^17.3.0",
+		"@stefanprobst/commitlint-config": "^1.0.3",
+		"@stefanprobst/prettier-config": "^3.0.0",
+		"lint-staged": "^13.1.0",
+		"npm-run-all": "^4.1.5",
+		"prettier": "^2.8.1",
+		"simple-git-hooks": "^2.8.1",
+		"typescript": "^4.9.4"
+	},
+	"commitlint": {
+		"extends": "@stefanprobst/commitlint-config"
+	},
+	"lint-staged": {
+		"*": "prettier --cache --ignore-unknown --write"
+	},
+	"prettier": "@stefanprobst/prettier-config",
+	"simple-git-hooks": {
+		"commit-msg": "pnpm exec commitlint --edit",
+		"pre-commit": "pnpm exec lint-staged",
+		"pre-push": "pnpm run validate"
+	}
 }

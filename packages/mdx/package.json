@@ -1,15 +1,15 @@
 {
-  "name": "@stefanprobst/eslint-config-mdx",
-  "version": "1.0.0",
-  "licence": "MIT",
-  "main": "./config.js",
-  "exports": {
-    ".": "./config.js"
-  },
-  "dependencies": {
-    "eslint-plugin-mdx": "^2.0.2"
-  },
-  "peerDependencies": {
-    "@stefanprobst/eslint-config": "*"
-  }
+	"name": "@stefanprobst/eslint-config-mdx",
+	"version": "1.0.0",
+	"licence": "MIT",
+	"main": "./config.js",
+	"exports": {
+		".": "./config.js"
+	},
+	"dependencies": {
+		"eslint-plugin-mdx": "^2.0.2"
+	},
+	"peerDependencies": {
+		"@stefanprobst/eslint-config": "*"
+	}
 }

@@ -1,16 +1,16 @@
 {
-  "name": "@stefanprobst/eslint-config-astro",
-  "version": "1.0.3",
-  "licence": "MIT",
-  "main": "./config.js",
-  "exports": {
-    ".": "./config.js"
-  },
-  "dependencies": {
-    "eslint-plugin-astro": ">=0.18.0",
-    "eslint-plugin-jsx-a11y": "^6.6.1"
-  },
-  "peerDependencies": {
-    "@stefanprobst/eslint-config": "*"
-  }
+	"name": "@stefanprobst/eslint-config-astro",
+	"version": "1.0.3",
+	"licence": "MIT",
+	"main": "./config.js",
+	"exports": {
+		".": "./config.js"
+	},
+	"dependencies": {
+		"eslint-plugin-astro": ">=0.18.0",
+		"eslint-plugin-jsx-a11y": "^6.6.1"
+	},
+	"peerDependencies": {
+		"@stefanprobst/eslint-config": "*"
+	}
 }

@@ -1,9 +1,9 @@
 {
-  "compilerOptions": {
-    "allowJs": true,
-    "module": "commonjs",
-    "moduleResolution": "node",
-    "target": "es2021"
-  },
-  "include": ["**/*.js", "**/*.ts"]
+	"compilerOptions": {
+		"allowJs": true,
+		"module": "commonjs",
+		"moduleResolution": "node",
+		"target": "es2021"
+	},
+	"include": ["**/*.js", "**/*.ts"]
 }

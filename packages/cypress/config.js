@@ -1,29 +1,29 @@
 const project = [
-  './cypress/tsconfig.json',
-  './apps/*/cypress/tsconfig.json',
-  './examples/*/cypress/tsconfig.json',
-  './packages/*/cypress/tsconfig.json',
-]
+	"./cypress/tsconfig.json",
+	"./apps/*/cypress/tsconfig.json",
+	"./examples/*/cypress/tsconfig.json",
+	"./packages/*/cypress/tsconfig.json",
+];
 
 /** @type {import('eslint').Linter.Config} */
 const config = {
-  overrides: [
-    {
-      files: [
-        './cypress/**/*.@(ts|tsx)',
-        './apps/*/cypress/**/*.@(ts|tsx)',
-        './examples/*/cypress/**/*.@(ts|tsx)',
-        './packages/*/cypress/**/*.@(ts|tsx)',
-      ],
-      parserOptions: {
-        project,
-      },
-    },
-    {
-      files: ['**/*.test.e2e.@(ts|tsx)'],
-      extends: 'plugin:cypress/recommended',
-    },
-  ],
-}
+	overrides: [
+		{
+			files: [
+				"./cypress/**/*.@(ts|tsx)",
+				"./apps/*/cypress/**/*.@(ts|tsx)",
+				"./examples/*/cypress/**/*.@(ts|tsx)",
+				"./packages/*/cypress/**/*.@(ts|tsx)",
+			],
+			parserOptions: {
+				project,
+			},
+		},
+		{
+			files: ["**/*.test.e2e.@(ts|tsx)"],
+			extends: "plugin:cypress/recommended",
+		},
+	],
+};
 
-module.exports = config
+module.exports = config;
