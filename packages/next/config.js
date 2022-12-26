@@ -22,7 +22,7 @@ const config = {
 			},
 		},
 		{
-			files: ["./src/pages/**/*.api.ts"],
+			files: ["./src/pages/**/*.api.ts", "./src/middleware.ts"],
 			rules: {
 				"import/no-default-export": "off",
 			},
