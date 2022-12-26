@@ -2,6 +2,9 @@
 	"name": "@stefanprobst/eslint-config-next",
 	"version": "7.0.5",
 	"licence": "MIT",
+	"publishConfig": {
+		"access": "public"
+	},
 	"main": "./config.js",
 	"exports": {
 		".": "./config.js"
