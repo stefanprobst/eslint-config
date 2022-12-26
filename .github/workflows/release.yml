@@ -29,6 +29,7 @@ jobs:
           cache: pnpm
           # https://docs.github.com/en/actions/publishing-packages/publishing-nodejs-packages#publishing-packages-to-the-npm-registry
           registry-url: "https://registry.npmjs.org"
+          scope: "@stefanprobst"
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
