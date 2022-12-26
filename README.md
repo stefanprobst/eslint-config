@@ -29,7 +29,7 @@ installation instructions.
     "@stefanprobst/eslint-config-playwright",
     // Add eslint react, react-hooks, jsx-a11y plugins, and jest-dom, testing-library plugins for `*.test.@(ts|tsx)` files..
     "@stefanprobst/eslint-config-react",
-		// Add eslint solidjs plugin.
+    // Add eslint solidjs plugin.
     "@stefanprobst/eslint-config-solid",
     // Add eslint storybook plugin for `*.storybook.@(ts|tsx)` files.
     "@stefanprobst/eslint-config-storybook",
