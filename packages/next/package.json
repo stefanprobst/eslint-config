@@ -2,10 +2,6 @@
 	"name": "@stefanprobst/eslint-config-next",
 	"version": "7.0.5",
 	"licence": "MIT",
-	"publishConfig": {
-		"access": "public",
-		"registry": "https://registry.npmjs.org"
-	},
 	"main": "./config.js",
 	"exports": {
 		".": "./config.js"
