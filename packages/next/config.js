@@ -27,6 +27,20 @@ const config = {
 				"import/no-default-export": "off",
 			},
 		},
+		{
+			files: [
+				"./src/app/**/error.tsx",
+				"./src/app/**/head.tsx",
+				"./src/app/**/layout.tsx",
+				"./src/app/**/loading.tsx",
+				"./src/app/**/not-found.tsx",
+				"./src/app/**/page.tsx",
+				"./src/app/**/template.tsx",
+			],
+			rules: {
+				"import/no-default-export": "off",
+			},
+		},
 	],
 };
 
