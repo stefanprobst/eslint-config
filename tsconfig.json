@@ -3,6 +3,7 @@
 		"allowJs": true,
 		"module": "commonjs",
 		"moduleResolution": "node",
+		"strict": true,
 		"target": "es2021"
 	},
 	"include": ["**/*.js", "**/*.ts"]
