@@ -7,7 +7,7 @@ importers:
       "@changesets/cli": ^2.26.1
       "@commitlint/cli": ^17.5.0
       "@stefanprobst/commitlint-config": ^1.0.3
-      "@stefanprobst/prettier-config": ^3.0.0
+      "@stefanprobst/prettier-config": ^3.0.1
       lint-staged: ^13.1.4
       npm-run-all: ^4.1.5
       prettier: ^2.8.7
@@ -18,7 +18,7 @@ importers:
       "@changesets/cli": 2.26.1
       "@commitlint/cli": 17.5.0
       "@stefanprobst/commitlint-config": 1.0.3_@commitlint+cli@17.5.0
-      "@stefanprobst/prettier-config": 3.0.0_prettier@2.8.7
+      "@stefanprobst/prettier-config": 3.0.1_prettier@2.8.7
       lint-staged: 13.2.0
       npm-run-all: 4.1.5
       prettier: 2.8.7
@@ -811,10 +811,10 @@ packages:
       "@commitlint/config-conventional": 17.0.3
     dev: true
 
-  /@stefanprobst/prettier-config/3.0.0_prettier@2.8.7:
+  /@stefanprobst/prettier-config/3.0.1_prettier@2.8.7:
     resolution:
       {
-        integrity: sha512-jYeNZyE1DxtNZ7IN497xSlOcqxIdeTTiupZVK39X0isqfkHNwens7CYfMjaUgetfNorzqK7JFxbPTx9mJjsQZA==,
+        integrity: sha512-0BVSw6DXhgoYa4a14vKnizMQKyK8rrp3cqk1lPNt+MMEE+zvOk7PZrSkxx0UTQEy26y+bK/Lyr3VGke1ptCHHQ==,
       }
     peerDependencies:
       prettier: ">=2"
