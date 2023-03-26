@@ -1,13 +1,4 @@
-const project = [
-	"./tsconfig.json",
-	"./tsconfig.*.json",
-	"./apps/*/tsconfig.json",
-	"./apps/*/tsconfig.*.json",
-	"./examples/*/tsconfig.json",
-	"./examples/*/tsconfig.*.json",
-	"./packages/*/tsconfig.json",
-	"./packages/*/tsconfig.*.json",
-];
+const project = ["./tsconfig.json", "./tsconfig.*.json"];
 
 /** @type {import('eslint').Linter.Config} */
 const config = {
@@ -69,7 +60,7 @@ const config = {
 		"@typescript-eslint/sort-type-union-intersection-members": "error",
 		"@typescript-eslint/strict-boolean-expressions": "error",
 		"@typescript-eslint/switch-exhaustiveness-check": "error",
-		"import/consistent-type-specifier-style": "error",
+		"import/consistent-type-specifier-style": ["error", "prefer-inline"],
 		"import/first": "error",
 		"import/newline-after-import": "error",
 		"import/no-anonymous-default-export": "error",
