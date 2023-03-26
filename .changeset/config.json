@@ -1,9 +1,11 @@
 {
-	"$schema": "https://unpkg.com/@changesets/config@2.2.0/schema.json",
+	"$schema": "https://unpkg.com/@changesets/config@2.3.0/schema.json",
 	"access": "public",
 	"baseBranch": "main",
 	"changelog": ["@changesets/changelog-github", { "repo": "stefanprobst/eslint-config" }],
 	"commit": false,
-	"onlyUpdatePeerDependentsWhenOutOfRange": true,
-	"updateInternalDependencies": "patch"
+	"updateInternalDependencies": "patch",
+	"___experimentalUnsafeOptions_WILL_CHANGE_IN_PATCH": {
+		"onlyUpdatePeerDependentsWhenOutOfRange": true
+	}
 }
