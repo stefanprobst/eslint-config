@@ -1,5 +1,13 @@
 # @stefanprobst/eslint-config
 
+## 1.1.1
+
+### Patch Changes
+
+- [`53dddb0`](https://github.com/stefanprobst/eslint-config/commit/53dddb0868f758b3920598fda987f6f5a30cdaa6)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - remove unnecessary project paths,
+  explicitly set prefer-inline for type imports
+
 ## 1.1.0
 
 ### Minor Changes
