@@ -7,7 +7,7 @@
 		".": "./config.js"
 	},
 	"dependencies": {
-		"eslint-plugin-n": "^15.2.4"
+		"eslint-plugin-n": "^15.6.1"
 	},
 	"peerDependencies": {
 		"@stefanprobst/eslint-config": "*"

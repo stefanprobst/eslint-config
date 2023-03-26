@@ -7,7 +7,7 @@
 		".": "./config.js"
 	},
 	"dependencies": {
-		"eslint-plugin-storybook": ">=0.6.3"
+		"eslint-plugin-storybook": ">=0.6.11"
 	},
 	"peerDependencies": {
 		"@stefanprobst/eslint-config": "*"
