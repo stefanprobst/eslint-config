@@ -15,7 +15,7 @@ const config = {
 	plugins: ["simple-import-sort"],
 	env: {
 		browser: true,
-		es2019: true,
+		es2021: true,
 		node: true,
 	},
 	parserOptions: {
