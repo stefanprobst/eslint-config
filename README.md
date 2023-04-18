@@ -23,6 +23,8 @@ installation instructions.
     "@stefanprobst/eslint-config-mdx",
     // Add eslint next.js plugin.
     "@stefanprobst/eslint-config-next",
+    // Add eslint nuxt plugin.
+    "@stefanprobst/eslint-config-nuxt",
     // Add eslint node.js plugin.
     "@stefanprobst/eslint-config-node",
     // Add eslint playwright plugin for `*.test.e2e.@(ts|tsx)` files.
