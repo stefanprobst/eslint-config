@@ -1,6 +1,6 @@
 {
 	"name": "@stefanprobst/eslint-config-nuxt",
-	"version": "0.0.0",
+	"version": "1.0.0",
 	"licence": "MIT",
 	"main": "./config.js",
 	"exports": {
