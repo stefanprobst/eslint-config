@@ -2,7 +2,7 @@
 const config = {
 	overrides: [
 		{
-			files: ["**/*.@(md|mdx)"],
+			files: ["./**/*.@(md|mdx)"],
 			extends: ["plugin:mdx/recommended"],
 		},
 	],

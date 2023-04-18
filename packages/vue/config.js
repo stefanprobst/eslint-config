@@ -5,7 +5,7 @@ const config = {
 	},
 	overrides: [
 		{
-			files: ["**/*.vue"],
+			files: ["./**/*.vue"],
 			extends: [
 				"plugin:vue/vue3-recommended",
 				"plugin:vuejs-accessibility/recommended",

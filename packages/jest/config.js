@@ -2,7 +2,7 @@
 const config = {
 	overrides: [
 		{
-			files: ["**/*.test.@(js|ts|tsx)"],
+			files: ["./**/*.test.@(js|ts|tsx)"],
 			extends: ["plugin:jest/recommended", "plugin:jest/style"],
 		},
 	],

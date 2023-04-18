@@ -20,7 +20,7 @@ const config = {
 			},
 		},
 		{
-			files: ["**/*.test.e2e.@(ts|tsx)"],
+			files: ["./**/*.test.e2e.@(ts|tsx)"],
 			extends: "plugin:cypress/recommended",
 		},
 	],

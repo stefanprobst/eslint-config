@@ -1,0 +1,16 @@
+{
+	"name": "@stefanprobst/eslint-config-nuxt",
+	"version": "0.0.0",
+	"licence": "MIT",
+	"main": "./config.js",
+	"exports": {
+		".": "./config.js"
+	},
+	"dependencies": {
+		"eslint-plugin-nuxt": "^4.0.0"
+	},
+	"peerDependencies": {
+		"@stefanprobst/eslint-config": "*",
+		"@stefanprobst/eslint-config-vue": "*"
+	}
+}

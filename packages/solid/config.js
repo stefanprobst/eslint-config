@@ -2,7 +2,7 @@
 const config = {
 	overrides: [
 		{
-			files: ["**/*.@(ts|tsx)"],
+			files: ["./**/*.@(ts|tsx)"],
 			extends: ["plugin:jsx-a11y/recommended", "plugin:solid/typescript"],
 			rules: {
 				"jsx-a11y/anchor-is-valid": ["error", { components: ["Link"] }],

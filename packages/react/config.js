@@ -2,7 +2,7 @@
 const config = {
 	overrides: [
 		{
-			files: ["**/*.@(ts|tsx)"],
+			files: ["./**/*.@(ts|tsx)"],
 			extends: [
 				"plugin:react/recommended",
 				"plugin:react/jsx-runtime",
@@ -26,7 +26,7 @@ const config = {
 			},
 		},
 		{
-			files: ["**/*.test.@(ts|tsx)"],
+			files: ["./**/*.test.@(ts|tsx)"],
 			extends: ["plugin:jest-dom/recommended", "plugin:testing-library/react"],
 		},
 	],

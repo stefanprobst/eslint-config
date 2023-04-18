@@ -2,7 +2,7 @@
 const config = {
 	overrides: [
 		{
-			files: ["**/*.@(cjs|js|mjs|ts)"],
+			files: ["./**/*.@(cjs|js|mjs|ts)"],
 			extends: ["plugin:n/recommended"],
 			rules: {
 				"n/prefer-global/url": ["warn"],
