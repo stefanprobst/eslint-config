@@ -64,7 +64,7 @@ const config = {
 		"import/first": "error",
 		"import/newline-after-import": "error",
 		"import/no-anonymous-default-export": "error",
-		"import/no-duplicates": "error",
+		"import/no-duplicates": ["error", { "prefer-inline": true }],
 		"simple-import-sort/imports": "error",
 		"simple-import-sort/exports": "error",
 	},

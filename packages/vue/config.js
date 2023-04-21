@@ -15,6 +15,7 @@ const config = {
 				parser: "@typescript-eslint/parser",
 			},
 			rules: {
+				"vue/multi-word-component-names": "off",
 				"vue/padding-line-between-blocks": "error",
 				"vuejs-accessibility/label-has-for": [
 					"error",

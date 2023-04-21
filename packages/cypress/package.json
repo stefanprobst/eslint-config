@@ -2,14 +2,20 @@
 	"name": "@stefanprobst/eslint-config-cypress",
 	"version": "1.0.1",
 	"licence": "MIT",
+	"publishConfig": {
+		"access": "public"
+	},
 	"main": "./config.js",
 	"exports": {
 		".": "./config.js"
 	},
+	"files": [
+		"config.js"
+	],
 	"dependencies": {
-		"eslint-plugin-cypress": "^2.12.1"
+		"eslint-plugin-cypress": "^2.13.2"
 	},
 	"peerDependencies": {
-		"@stefanprobst/eslint-config": "*"
+		"@stefanprobst/eslint-config": "workspace:*"
 	}
 }

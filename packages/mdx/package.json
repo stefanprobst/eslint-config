@@ -2,14 +2,20 @@
 	"name": "@stefanprobst/eslint-config-mdx",
 	"version": "1.0.0",
 	"licence": "MIT",
+	"publishConfig": {
+		"access": "public"
+	},
 	"main": "./config.js",
 	"exports": {
 		".": "./config.js"
 	},
+	"files": [
+		"config.js"
+	],
 	"dependencies": {
-		"eslint-plugin-mdx": "^2.0.2"
+		"eslint-plugin-mdx": "^2.0.5"
 	},
 	"peerDependencies": {
-		"@stefanprobst/eslint-config": "*"
+		"@stefanprobst/eslint-config": "workspace:*"
 	}
 }

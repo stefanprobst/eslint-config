@@ -2,15 +2,21 @@
 	"name": "@stefanprobst/eslint-config-next",
 	"version": "7.0.6",
 	"licence": "MIT",
+	"publishConfig": {
+		"access": "public"
+	},
 	"main": "./config.js",
 	"exports": {
 		".": "./config.js"
 	},
+	"files": [
+		"config.js"
+	],
 	"dependencies": {
-		"@next/eslint-plugin-next": ">=12.2.5"
+		"@next/eslint-plugin-next": ">=13.3.0"
 	},
 	"peerDependencies": {
-		"@stefanprobst/eslint-config": "*",
-		"@stefanprobst/eslint-config-react": "*"
+		"@stefanprobst/eslint-config": "workspace:*",
+		"@stefanprobst/eslint-config-react": "workspace:*"
 	}
 }

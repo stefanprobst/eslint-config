@@ -2,15 +2,21 @@
 	"name": "@stefanprobst/eslint-config-solid",
 	"version": "1.0.0",
 	"licence": "MIT",
+	"publishConfig": {
+		"access": "public"
+	},
 	"main": "./config.js",
 	"exports": {
 		".": "./config.js"
 	},
+	"files": [
+		"config.js"
+	],
 	"dependencies": {
-		"eslint-plugin-jsx-a11y": "^6.6.1",
-		"eslint-plugin-solid": "^0.9.1"
+		"eslint-plugin-jsx-a11y": "^6.7.1",
+		"eslint-plugin-solid": ">=0.12.1"
 	},
 	"peerDependencies": {
-		"@stefanprobst/eslint-config": "*"
+		"@stefanprobst/eslint-config": "workspace:*"
 	}
 }
