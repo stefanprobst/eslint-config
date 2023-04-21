@@ -1,5 +1,18 @@
 # @stefanprobst/eslint-config-next
 
+## 7.0.7
+
+### Patch Changes
+
+- [`f6106bc`](https://github.com/stefanprobst/eslint-config/commit/f6106bc4401f13a958c8380e97a3e64cc0e4da55)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - update deps
+
+- Updated dependencies
+  [[`f6106bc`](https://github.com/stefanprobst/eslint-config/commit/f6106bc4401f13a958c8380e97a3e64cc0e4da55),
+  [`f6106bc`](https://github.com/stefanprobst/eslint-config/commit/f6106bc4401f13a958c8380e97a3e64cc0e4da55)]:
+  - @stefanprobst/eslint-config@1.1.2
+  - @stefanprobst/eslint-config-react@1.0.5
+
 ## 7.0.6
 
 ### Patch Changes
