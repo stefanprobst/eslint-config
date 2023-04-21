@@ -1,6 +1,6 @@
 {
 	"name": "@stefanprobst/eslint-config-next",
-	"version": "7.0.6",
+	"version": "7.0.7",
 	"licence": "MIT",
 	"publishConfig": {
 		"access": "public"

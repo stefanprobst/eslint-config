@@ -1,6 +1,6 @@
 {
 	"name": "@stefanprobst/eslint-config-solid",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"licence": "MIT",
 	"publishConfig": {
 		"access": "public"
