@@ -31,6 +31,7 @@ const config = {
 			files: [
 				"./src/app/**/default.tsx",
 				"./src/app/**/error.tsx",
+				"./src/app/**/global-error.tsx",
 				"./src/app/**/layout.tsx",
 				"./src/app/**/loading.tsx",
 				"./src/app/**/not-found.tsx",
