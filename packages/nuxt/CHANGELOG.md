@@ -1,5 +1,18 @@
 # @stefanprobst/eslint-config-nuxt
 
+## 1.0.2
+
+### Patch Changes
+
+- [`cee4db0`](https://github.com/stefanprobst/eslint-config/commit/cee4db02b704bfd686f48c9f0e949480556b34aa)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - disable no-undef to play nice with nuxt
+  auto-imports
+
+- Updated dependencies
+  [[`507bf68`](https://github.com/stefanprobst/eslint-config/commit/507bf68a9fe9a9486592b5174ae2b055a983e217)]:
+  - @stefanprobst/eslint-config@1.1.3
+  - @stefanprobst/eslint-config-vue@1.0.5
+
 ## 1.0.1
 
 ### Patch Changes

@@ -1,5 +1,12 @@
 # @stefanprobst/eslint-config
 
+## 1.1.3
+
+### Patch Changes
+
+- [`507bf68`](https://github.com/stefanprobst/eslint-config/commit/507bf68a9fe9a9486592b5174ae2b055a983e217)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - allow namespace declarations
+
 ## 1.1.2
 
 ### Patch Changes
