@@ -1,5 +1,16 @@
 # @stefanprobst/eslint-config-next
 
+## 7.0.9
+
+### Patch Changes
+
+- [`9f52055`](https://github.com/stefanprobst/eslint-config/commit/9f52055e8bb844efbe57f26331cfe938bb114e4d)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - allow default export for i18n
+
+- Updated dependencies
+  [[`f03c2a0`](https://github.com/stefanprobst/eslint-config/commit/f03c2a070f848c486e16599c96077f90d2779a80)]:
+  - @stefanprobst/eslint-config-react@1.0.7
+
 ## 7.0.8
 
 ### Patch Changes
