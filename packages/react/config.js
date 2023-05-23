@@ -17,7 +17,6 @@ const config = {
 			rules: {
 				"jsx-a11y/anchor-is-valid": ["error", { components: ["Link"] }],
 				"jsx-a11y/no-autofocus": ["error", { ignoreNonDOM: true }],
-				"jsx-a11y/no-onchange": "off",
 				"jsx-a11y/no-redundant-roles": ["error", { ul: ["list"], ol: ["list"] }],
 				"react/boolean-prop-naming": "error",
 				"react/function-component-definition": "error",
