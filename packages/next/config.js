@@ -9,26 +9,39 @@ const config = {
 			},
 		},
 		{
-			files: ["*.config.ts", "*.config.mjs", "./**/*.d.ts"],
+			files: ["./**/*.d.ts"],
 			rules: {
 				"import/no-default-export": "off",
 			},
 		},
 		{
-			files: ["./src/pages/**/*.page.tsx"],
+			files: ["./*.config.ts", "./*.config.js", "./*.config.mjs"],
 			rules: {
-				"@typescript-eslint/no-namespace": "off",
 				"import/no-default-export": "off",
 			},
 		},
 		{
-			files: ["./src/pages/**/*.api.ts", "./src/middleware.ts"],
+			files: ["./middleware.ts", "./src/middleware.ts"],
+			rules: {
+				"import/no-default-export": "off",
+			},
+		},
+		{
+			files: ["./i18n.ts", "./src/i18n.ts"],
 			rules: {
 				"import/no-default-export": "off",
 			},
 		},
 		{
 			files: [
+				"./app/**/default.tsx",
+				"./app/**/error.tsx",
+				"./app/**/global-error.tsx",
+				"./app/**/layout.tsx",
+				"./app/**/loading.tsx",
+				"./app/**/not-found.tsx",
+				"./app/**/page.tsx",
+				"./app/**/template.tsx",
 				"./src/app/**/default.tsx",
 				"./src/app/**/error.tsx",
 				"./src/app/**/global-error.tsx",
