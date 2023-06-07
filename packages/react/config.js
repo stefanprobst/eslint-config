@@ -24,10 +24,6 @@ const config = {
 				"react/prop-types": "off",
 			},
 		},
-		{
-			files: ["./**/*.test.@(ts|tsx)"],
-			extends: ["plugin:jest-dom/recommended", "plugin:testing-library/react"],
-		},
 	],
 };
 

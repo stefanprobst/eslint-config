@@ -1,0 +1,24 @@
+{
+	"name": "@stefanprobst/eslint-config-react-test",
+	"version": "0.1.0",
+	"licence": "MIT",
+	"publishConfig": {
+		"access": "public"
+	},
+	"main": "./config.js",
+	"exports": {
+		".": "./config.js"
+	},
+	"files": [
+		"config.js"
+	],
+	"dependencies": {
+		"eslint-plugin-jest-dom": "^4.0.3",
+		"eslint-plugin-testing-library": "^5.10.3"
+	},
+	"peerDependencies": {
+		"@stefanprobst/eslint-config": "workspace:*",
+		"@stefanprobst/eslint-config-react": "workspace:*",
+		"@stefanprobst/eslint-config-jest": "workspace:*"
+	}
+}
