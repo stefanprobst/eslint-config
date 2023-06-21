@@ -1,5 +1,12 @@
 # @stefanprobst/eslint-config-react
 
+## 1.0.7
+
+### Patch Changes
+
+- [`f03c2a0`](https://github.com/stefanprobst/eslint-config/commit/f03c2a070f848c486e16599c96077f90d2779a80)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - remove deprecated a11y rules
+
 ## 1.0.6
 
 ### Patch Changes
