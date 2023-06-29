@@ -58,7 +58,7 @@ const config = {
 			{ argsIgnorePattern: "^_", varsIgnorePattern: "^_" },
 		],
 		"@typescript-eslint/require-array-sort-compare": "error",
-		"@typescript-eslint/sort-type-union-intersection-members": "error",
+		"@typescript-eslint/sort-type-constituents": "error",
 		"@typescript-eslint/strict-boolean-expressions": "error",
 		"@typescript-eslint/switch-exhaustiveness-check": "error",
 		"import/consistent-type-specifier-style": ["error", "prefer-inline"],
