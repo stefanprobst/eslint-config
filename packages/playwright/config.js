@@ -2,8 +2,8 @@
 const config = {
 	overrides: [
 		{
-			files: ["./**/*.test.e2e.@(ts|tsx)"],
-			extends: "plugin:playwright/playwright-test",
+			files: ["./e2e/**/*.@(spec|test).@(ts|tsx)"],
+			extends: "plugin:playwright/recommended",
 		},
 	],
 };
