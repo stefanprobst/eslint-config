@@ -10,7 +10,7 @@ installation instructions.
   "extends": [
     // Add base config for typescript project.
     "@stefanprobst/eslint-config-base",
-    // Add strict typescript-eslint preset.
+    // Add additional rules from strict typescript-eslint preset.
     "@stefanprobst/eslint-config-base/strict"
 
     // Add eslint astro plugin.
