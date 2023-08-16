@@ -1,6 +1,6 @@
 {
 	"name": "@stefanprobst/eslint-config-playwright",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"licence": "MIT",
 	"publishConfig": {
 		"access": "public"
@@ -16,6 +16,6 @@
 		"eslint-plugin-playwright": ">=0.15.3"
 	},
 	"peerDependencies": {
-		"@stefanprobst/eslint-config": "workspace:^1"
+		"@stefanprobst/eslint-config": "workspace:^1.2.0"
 	}
 }

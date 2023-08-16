@@ -1,5 +1,20 @@
 # @stefanprobst/eslint-config
 
+## 1.2.0
+
+### Minor Changes
+
+- [`70cb11a`](https://github.com/stefanprobst/eslint-config/commit/70cb11ad7548f41aaf55b9378b14dfb29cbbc1af)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - bump typescript-eslint to v6
+
+### Patch Changes
+
+- [`5a781f1`](https://github.com/stefanprobst/eslint-config/commit/5a781f186c9d9d4dd24b098d4e96ac71f84f857c)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - update deps
+
+- [`3fcfd93`](https://github.com/stefanprobst/eslint-config/commit/3fcfd93b61e832087b6e755b513739f88513c87b)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - update deps
+
 ## 1.1.3
 
 ### Patch Changes
