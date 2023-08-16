@@ -17,6 +17,6 @@
 		"eslint-plugin-solid": ">=0.12.1"
 	},
 	"peerDependencies": {
-		"@stefanprobst/eslint-config": "workspace:^"
+		"@stefanprobst/eslint-config": "workspace:^1"
 	}
 }

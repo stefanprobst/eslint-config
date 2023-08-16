@@ -16,6 +16,6 @@
 		"eslint-plugin-cypress": "^2.13.2"
 	},
 	"peerDependencies": {
-		"@stefanprobst/eslint-config": "workspace:^"
+		"@stefanprobst/eslint-config": "workspace:^1"
 	}
 }

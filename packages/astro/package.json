@@ -17,6 +17,6 @@
 		"eslint-plugin-jsx-a11y": "^6.7.1"
 	},
 	"peerDependencies": {
-		"@stefanprobst/eslint-config": "workspace:^"
+		"@stefanprobst/eslint-config": "workspace:^1"
 	}
 }

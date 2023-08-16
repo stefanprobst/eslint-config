@@ -17,6 +17,6 @@
 		"eslint-plugin-vuejs-accessibility": "^2.2.0"
 	},
 	"peerDependencies": {
-		"@stefanprobst/eslint-config": "workspace:^"
+		"@stefanprobst/eslint-config": "workspace:^1"
 	}
 }
