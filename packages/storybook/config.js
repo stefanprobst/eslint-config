@@ -2,7 +2,7 @@
 const config = {
 	overrides: [
 		{
-			files: ["./**/*.stories.tsx"],
+			files: ["./**/*.stories.@(ts|tsx)"],
 			extends: "plugin:storybook/recommended",
 			rules: {
 				"@typescript-eslint/explicit-module-boundary-types": "off",
