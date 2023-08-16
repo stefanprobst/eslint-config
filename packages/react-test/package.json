@@ -17,8 +17,8 @@
 		"eslint-plugin-testing-library": "^6.0.0"
 	},
 	"peerDependencies": {
-		"@stefanprobst/eslint-config": "workspace:^1.2.0",
-		"@stefanprobst/eslint-config-react": "workspace:^1.0.8",
+		"@stefanprobst/eslint-config": "workspace:^1",
+		"@stefanprobst/eslint-config-react": "workspace:^1",
 		"@stefanprobst/eslint-config-jest": "workspace:^1"
 	}
 }
