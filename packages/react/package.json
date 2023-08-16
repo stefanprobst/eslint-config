@@ -18,6 +18,6 @@
 		"eslint-plugin-react-hooks": "^4.6.0"
 	},
 	"peerDependencies": {
-		"@stefanprobst/eslint-config": "workspace:*"
+		"@stefanprobst/eslint-config": "workspace:^"
 	}
 }

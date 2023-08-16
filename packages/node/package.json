@@ -16,6 +16,6 @@
 		"eslint-plugin-n": "^16.0.1"
 	},
 	"peerDependencies": {
-		"@stefanprobst/eslint-config": "workspace:*"
+		"@stefanprobst/eslint-config": "workspace:^"
 	}
 }
