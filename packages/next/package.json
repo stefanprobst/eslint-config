@@ -16,7 +16,7 @@
 		"@next/eslint-plugin-next": ">=13.4.16"
 	},
 	"peerDependencies": {
-		"@stefanprobst/eslint-config": "workspace:^1",
-		"@stefanprobst/eslint-config-react": "workspace:^1"
+		"@stefanprobst/eslint-config": "workspace:*",
+		"@stefanprobst/eslint-config-react": "workspace:*"
 	}
 }

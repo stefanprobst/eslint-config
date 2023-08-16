@@ -16,7 +16,7 @@
 		"eslint-plugin-nuxt": "^4.0.0"
 	},
 	"peerDependencies": {
-		"@stefanprobst/eslint-config": "workspace:^1",
-		"@stefanprobst/eslint-config-vue": "workspace:^1"
+		"@stefanprobst/eslint-config": "workspace:*",
+		"@stefanprobst/eslint-config-vue": "workspace:*"
 	}
 }
