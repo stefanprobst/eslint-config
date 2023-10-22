@@ -1,5 +1,18 @@
 # @stefanprobst/eslint-config
 
+## 1.2.1
+
+### Patch Changes
+
+- [`41ecc8f`](https://github.com/stefanprobst/eslint-config/commit/41ecc8f66e78516a15aa30337db7c83f7c9e6615)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - add require-atomic-updates rule
+
+- [`49cc021`](https://github.com/stefanprobst/eslint-config/commit/49cc021b3b8f8b78b69f3782f97272913e31046b)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - update deps
+
+- [`1f3b08d`](https://github.com/stefanprobst/eslint-config/commit/1f3b08d9516ae1aaf0c2f65e11c313216f47360c)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - set ecmascript version for parser
+
 ## 1.2.0
 
 ### Minor Changes

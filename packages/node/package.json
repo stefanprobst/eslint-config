@@ -1,6 +1,6 @@
 {
 	"name": "@stefanprobst/eslint-config-node",
-	"version": "4.0.2",
+	"version": "4.0.3",
 	"licence": "MIT",
 	"publishConfig": {
 		"access": "public"
