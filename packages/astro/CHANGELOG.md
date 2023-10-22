@@ -1,5 +1,18 @@
 # @stefanprobst/eslint-config-astro
 
+## 1.0.7
+
+### Patch Changes
+
+- [`49cc021`](https://github.com/stefanprobst/eslint-config/commit/49cc021b3b8f8b78b69f3782f97272913e31046b)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - update deps
+
+- Updated dependencies
+  [[`41ecc8f`](https://github.com/stefanprobst/eslint-config/commit/41ecc8f66e78516a15aa30337db7c83f7c9e6615),
+  [`49cc021`](https://github.com/stefanprobst/eslint-config/commit/49cc021b3b8f8b78b69f3782f97272913e31046b),
+  [`1f3b08d`](https://github.com/stefanprobst/eslint-config/commit/1f3b08d9516ae1aaf0c2f65e11c313216f47360c)]:
+  - @stefanprobst/eslint-config@1.2.1
+
 ## 1.0.6
 
 ### Patch Changes

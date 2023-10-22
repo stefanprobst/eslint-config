@@ -1,6 +1,6 @@
 {
 	"name": "@stefanprobst/eslint-config-react-test",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"licence": "MIT",
 	"publishConfig": {
 		"access": "public"
