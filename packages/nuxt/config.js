@@ -1,5 +1,14 @@
 /** @type {import('eslint').Linter.Config} */
 const config = {
+	settings: {
+		/** @see https://github.com/nuxt/nuxt/issues/22994 */
+		"import/resolver": {
+			typescript: {
+				project: "./.nuxt/tsconfig.json",
+				alwaysTryTypes: true,
+			},
+		},
+	},
 	overrides: [
 		{
 			files: ["./**/*.vue"],
@@ -10,6 +19,16 @@ const config = {
 				 * @see https://github.com/antfu/unplugin-auto-import/issues/3
 				 */
 				"no-undef": "off",
+				/**
+				 * Allow single emit function as `defineEmits` interface.
+				 */
+				"@typescript-eslint/prefer-function-type": "off",
+				"vuejs-accessibility/anchor-has-content": [
+					"error",
+					{
+						components: ["NuxtLink"],
+					},
+				],
 			},
 		},
 		{

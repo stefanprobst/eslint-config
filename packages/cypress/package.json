@@ -13,7 +13,7 @@
 		"config.js"
 	],
 	"dependencies": {
-		"eslint-plugin-cypress": "^2.13.2"
+		"eslint-plugin-cypress": "^2.15.1"
 	},
 	"peerDependencies": {
 		"@stefanprobst/eslint-config": "workspace:*"

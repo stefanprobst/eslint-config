@@ -1,4 +1,4 @@
-const project = ["./tsconfig.json", "./tsconfig.*.json"];
+const project = ["./tsconfig.json"];
 
 /** @type {import('eslint').Linter.Config} */
 const config = {
@@ -25,7 +25,7 @@ const config = {
 	},
 	settings: {
 		"import/parsers": {
-			"@typescript-eslint/parser": [".ts", ".tsx"],
+			"@typescript-eslint/parser": [".ts", ".tsx", ".js", ".mjs", ".cjs", ".mts", ".cts"],
 		},
 		"import/resolver": {
 			typescript: {
@@ -64,7 +64,6 @@ const config = {
 		"@typescript-eslint/sort-type-constituents": "error",
 		"@typescript-eslint/strict-boolean-expressions": "error",
 		"@typescript-eslint/switch-exhaustiveness-check": "error",
-		"import/consistent-type-specifier-style": ["error", "prefer-inline"],
 		"import/first": "error",
 		"import/newline-after-import": "error",
 		"import/no-anonymous-default-export": "error",
