@@ -1,5 +1,13 @@
 # @stefanprobst/eslint-config-astro
 
+## 1.0.8
+
+### Patch Changes
+
+- [`1de026b`](https://github.com/stefanprobst/eslint-config/commit/1de026b7b0038ca33f1462f275f1d25ff1170123)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - add astro:i18n virtual module to ignore
+  list
+
 ## 1.0.7
 
 ### Patch Changes
