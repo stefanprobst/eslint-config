@@ -1,5 +1,19 @@
 # @stefanprobst/eslint-config-react-test
 
+## 0.1.3
+
+### Patch Changes
+
+- [`10d55d1`](https://github.com/stefanprobst/eslint-config/commit/10d55d155fa76fec548afbec67564c7c85d29edf)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - update deps
+
+- Updated dependencies
+  [[`10d55d1`](https://github.com/stefanprobst/eslint-config/commit/10d55d155fa76fec548afbec67564c7c85d29edf),
+  [`10d55d1`](https://github.com/stefanprobst/eslint-config/commit/10d55d155fa76fec548afbec67564c7c85d29edf)]:
+  - @stefanprobst/eslint-config-react@1.0.10
+  - @stefanprobst/eslint-config@1.2.2
+  - @stefanprobst/eslint-config-jest@1.0.4
+
 ## 0.1.2
 
 ### Patch Changes

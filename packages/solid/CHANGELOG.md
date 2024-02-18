@@ -1,5 +1,16 @@
 # @stefanprobst/eslint-config-solid
 
+## 1.0.4
+
+### Patch Changes
+
+- [`10d55d1`](https://github.com/stefanprobst/eslint-config/commit/10d55d155fa76fec548afbec67564c7c85d29edf)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - update deps
+
+- Updated dependencies
+  [[`10d55d1`](https://github.com/stefanprobst/eslint-config/commit/10d55d155fa76fec548afbec67564c7c85d29edf)]:
+  - @stefanprobst/eslint-config@1.2.2
+
 ## 1.0.3
 
 ### Patch Changes
