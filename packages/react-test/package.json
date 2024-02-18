@@ -13,12 +13,12 @@
 		"config.js"
 	],
 	"dependencies": {
-		"eslint-plugin-jest-dom": "^5.0.2",
-		"eslint-plugin-testing-library": "^6.0.0"
+		"eslint-plugin-jest-dom": "^5.1.0",
+		"eslint-plugin-testing-library": "^6.2.0"
 	},
 	"peerDependencies": {
 		"@stefanprobst/eslint-config": "workspace:*",
-		"@stefanprobst/eslint-config-react": "workspace:*",
-		"@stefanprobst/eslint-config-jest": "workspace:*"
+		"@stefanprobst/eslint-config-jest": "workspace:*",
+		"@stefanprobst/eslint-config-react": "workspace:*"
 	}
 }
