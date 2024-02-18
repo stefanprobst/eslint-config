@@ -1,6 +1,6 @@
 {
 	"name": "@stefanprobst/eslint-config-cypress",
-	"version": "1.0.4",
+	"version": "1.0.5",
 	"licence": "MIT",
 	"publishConfig": {
 		"access": "public"
