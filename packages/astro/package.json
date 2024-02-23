@@ -1,6 +1,6 @@
 {
 	"name": "@stefanprobst/eslint-config-astro",
-	"version": "1.0.9",
+	"version": "1.0.10",
 	"licence": "MIT",
 	"publishConfig": {
 		"access": "public"
