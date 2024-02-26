@@ -1,5 +1,16 @@
 # @stefanprobst/eslint-config-react
 
+## 1.0.11
+
+### Patch Changes
+
+- [`f8d38b8`](https://github.com/stefanprobst/eslint-config/commit/f8d38b85ff80b1930417b1bb1a69209717e92e8a)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - sort jsx props, force boolean props
+
+- Updated dependencies
+  [[`75112ba`](https://github.com/stefanprobst/eslint-config/commit/75112ba448aeba4a12ccce8a688bf533caa28479)]:
+  - @stefanprobst/eslint-config@1.2.3
+
 ## 1.0.10
 
 ### Patch Changes

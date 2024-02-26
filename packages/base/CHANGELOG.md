@@ -1,5 +1,12 @@
 # @stefanprobst/eslint-config
 
+## 1.2.3
+
+### Patch Changes
+
+- [`75112ba`](https://github.com/stefanprobst/eslint-config/commit/75112ba448aeba4a12ccce8a688bf533caa28479)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - re-enable fixed consistent-return rule
+
 ## 1.2.2
 
 ### Patch Changes
