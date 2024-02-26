@@ -1,5 +1,15 @@
 # @stefanprobst/eslint-config-next
 
+## 7.0.12
+
+### Patch Changes
+
+- Updated dependencies
+  [[`75112ba`](https://github.com/stefanprobst/eslint-config/commit/75112ba448aeba4a12ccce8a688bf533caa28479),
+  [`f8d38b8`](https://github.com/stefanprobst/eslint-config/commit/f8d38b85ff80b1930417b1bb1a69209717e92e8a)]:
+  - @stefanprobst/eslint-config@1.2.3
+  - @stefanprobst/eslint-config-react@1.0.11
+
 ## 7.0.11
 
 ### Patch Changes

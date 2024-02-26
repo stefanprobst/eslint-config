@@ -1,5 +1,13 @@
 # @stefanprobst/eslint-config-node
 
+## 4.0.5
+
+### Patch Changes
+
+- Updated dependencies
+  [[`75112ba`](https://github.com/stefanprobst/eslint-config/commit/75112ba448aeba4a12ccce8a688bf533caa28479)]:
+  - @stefanprobst/eslint-config@1.2.3
+
 ## 4.0.4
 
 ### Patch Changes
