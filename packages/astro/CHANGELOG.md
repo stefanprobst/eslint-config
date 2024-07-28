@@ -1,5 +1,12 @@
 # @stefanprobst/eslint-config-astro
 
+## 2.0.1
+
+### Patch Changes
+
+- [`8a248e8`](https://github.com/stefanprobst/eslint-config/commit/8a248e8fc15b85d617579cd5fc8960d34b9a8ffe)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - fix: check astro links
+
 ## 2.0.0
 
 ### Patch Changes
