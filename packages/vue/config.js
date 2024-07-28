@@ -1,5 +1,5 @@
 import { FlatCompat } from "@eslint/eslintrc";
-// import vuePlugin from "eslint-plugin-vue";
+import vuePlugin from "eslint-plugin-vue";
 // import vueAccessibilityPlugin from "eslint-plugin-vuejs-accessibility";
 // import globals from "globals";
 import ts from "typescript-eslint";
@@ -17,15 +17,16 @@ const config = ts.config(
 	// 		},
 	// 	},
 	// },
+	...vuePlugin.configs["flat/recommended"],
 	// @ts-expect-error Type incompatibility between `eslint` and `typescript-eslint`.
-	...compat.extends("plugin:vue/vue3-recommended", "plugin:vuejs-accessibility/recommended"),
+	...compat.extends("plugin:vuejs-accessibility/recommended"),
 	{
 		files: ["**/*.vue"],
-		// languageOptions: {
-		// 	parserOptions: {
-		// 		parser: "@typescript-eslint/parser",
-		// 	},
-		// },
+		languageOptions: {
+			parserOptions: {
+				parser: "@typescript-eslint/parser",
+			},
+		},
 		rules: {
 			/**
 			 * @see https://github.com/vuejs/vue-eslint-parser/issues/104
@@ -47,6 +48,7 @@ const config = ts.config(
 			"vue/multi-word-component-names": "off",
 			"vue/padding-line-between-blocks": "error",
 			"vue/require-default-prop": "off",
+
 			"vuejs-accessibility/anchor-has-content": ["error", { components: ["RouterLink"] }],
 			"vuejs-accessibility/label-has-for": ["error", { required: { some: ["nesting", "id"] } }],
 			"vuejs-accessibility/no-autofocus": ["error", { ignoreNonDOM: true }],
