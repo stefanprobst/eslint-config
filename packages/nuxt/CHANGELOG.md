@@ -1,5 +1,18 @@
 # @stefanprobst/eslint-config-nuxt
 
+## 2.0.2
+
+### Patch Changes
+
+- [`0a6eb97`](https://github.com/stefanprobst/eslint-config/commit/0a6eb97062f1699c4717761de96e512db8532b8e)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - fix: add types
+
+- Updated dependencies
+  [[`0a6eb97`](https://github.com/stefanprobst/eslint-config/commit/0a6eb97062f1699c4717761de96e512db8532b8e),
+  [`23fc2a3`](https://github.com/stefanprobst/eslint-config/commit/23fc2a3a2114b2871e0e864281096f1d79bee2dc)]:
+  - @stefanprobst/eslint-config@2.0.1
+  - @stefanprobst/eslint-config-vue@2.0.1
+
 ## 2.0.1
 
 ### Patch Changes
