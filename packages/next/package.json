@@ -11,7 +11,8 @@
 		".": "./config.js"
 	},
 	"files": [
-		"./config.js"
+		"config.js",
+		"config.d.ts"
 	],
 	"peerDependencies": {
 		"@stefanprobst/eslint-config": "workspace:*",
