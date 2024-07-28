@@ -1,5 +1,18 @@
 # @stefanprobst/eslint-config
 
+## 2.0.0
+
+### Major Changes
+
+- [`6fd850a`](https://github.com/stefanprobst/eslint-config/commit/6fd850ab1ed7da70c1db63fafd14e912796ae810)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - add eslint v9 compatibility, convert to
+  flat config
+
+### Patch Changes
+
+- [`75112ba`](https://github.com/stefanprobst/eslint-config/commit/75112ba448aeba4a12ccce8a688bf533caa28479)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - re-enable fixed consistent-return rule
+
 ## 1.2.2
 
 ### Patch Changes
