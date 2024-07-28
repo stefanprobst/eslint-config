@@ -2,20 +2,25 @@
 	"name": "@stefanprobst/eslint-config-storybook",
 	"version": "1.0.5",
 	"licence": "MIT",
-	"publishConfig": {
-		"access": "public"
+	"type": "module",
+	"engines": {
+		"node": ">=20.11"
 	},
 	"main": "./config.js",
 	"exports": {
 		".": "./config.js"
 	},
 	"files": [
-		"config.js"
+		"./config.js"
 	],
 	"dependencies": {
 		"eslint-plugin-storybook": ">=0.8.0"
 	},
 	"peerDependencies": {
 		"@stefanprobst/eslint-config": "workspace:*"
+	},
+	"devDependencies": {
+		"@types/eslint": "^9.6.0",
+		"globals": "^15.8.0"
 	}
 }

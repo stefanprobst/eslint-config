@@ -1,16 +1,19 @@
-/** @type {import('eslint').Linter.Config} */
-const config = {
-	overrides: [
-		{
-			files: ["./**/*.stories.ts", "./**/*.stories.tsx"],
-			extends: "plugin:storybook/recommended",
-			rules: {
-				"@typescript-eslint/explicit-module-boundary-types": "off",
-				"import/no-default-export": "off",
-				"react/function-component-definition": ["off", { namedComponents: "function-expression" }],
-			},
-		},
-	],
-};
+import { FlatCompat } from "@eslint/eslintrc";
+import storybookPlugin from "eslint-plugin-storybook";
+import ts from "typescript-eslint";
 
-module.exports = config;
+const compat = new FlatCompat({
+	baseDirectory: import.meta.dirname,
+});
+
+const config = ts.config({
+	...compat.config(storybookPlugin.configs.recommended),
+	files: ["**/*.stories.@(ts|tsx)"],
+	rules: {
+		"@typescript-eslint/explicit-module-boundary-types": "off",
+		"import-x/no-default-export": "off",
+		"react/function-component-definition": ["off", { namedComponents: "function-expression" }],
+	},
+});
+
+export default config;

@@ -1,11 +1,13 @@
-/** @type {import('eslint').Linter.Config} */
-const config = {
-	overrides: [
-		{
-			files: ["./**/*.@(md|mdx)"],
-			extends: ["plugin:mdx/recommended"],
-		},
-	],
-};
+import { FlatCompat } from "@eslint/eslintrc";
+import ts from "typescript-eslint";
 
-module.exports = config;
+const compat = new FlatCompat({
+	baseDirectory: import.meta.dirname,
+});
+
+const config = ts.config({
+	...compat.extends("plugin:mdx/recommended"),
+	files: ["**/*.@(md|mdx)"],
+});
+
+export default config;

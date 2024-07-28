@@ -2,21 +2,26 @@
 	"name": "@stefanprobst/eslint-config-solid",
 	"version": "1.0.4",
 	"licence": "MIT",
-	"publishConfig": {
-		"access": "public"
+	"type": "module",
+	"engines": {
+		"node": ">=20.11"
 	},
 	"main": "./config.js",
 	"exports": {
 		".": "./config.js"
 	},
 	"files": [
-		"config.js"
+		"./config.js"
 	],
 	"dependencies": {
-		"eslint-plugin-jsx-a11y": "^6.8.0",
-		"eslint-plugin-solid": ">=0.13.1"
+		"eslint-plugin-jsx-a11y": "^6.9.0",
+		"eslint-plugin-solid": ">=0.14.1"
 	},
 	"peerDependencies": {
 		"@stefanprobst/eslint-config": "workspace:*"
+	},
+	"devDependencies": {
+		"@types/eslint": "^9.6.0",
+		"globals": "^15.8.0"
 	}
 }

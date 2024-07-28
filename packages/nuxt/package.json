@@ -2,15 +2,16 @@
 	"name": "@stefanprobst/eslint-config-nuxt",
 	"version": "1.0.4",
 	"licence": "MIT",
-	"publishConfig": {
-		"access": "public"
+	"type": "module",
+	"engines": {
+		"node": ">=20.11"
 	},
 	"main": "./config.js",
 	"exports": {
 		".": "./config.js"
 	},
 	"files": [
-		"config.js"
+		"./config.js"
 	],
 	"dependencies": {
 		"eslint-plugin-nuxt": "^4.0.0"
@@ -18,5 +19,9 @@
 	"peerDependencies": {
 		"@stefanprobst/eslint-config": "workspace:*",
 		"@stefanprobst/eslint-config-vue": "workspace:*"
+	},
+	"devDependencies": {
+		"@types/eslint": "^9.6.0",
+		"globals": "^15.8.0"
 	}
 }

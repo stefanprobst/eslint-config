@@ -2,9 +2,7 @@
 	"name": "@stefanprobst/eslint-config-mdx",
 	"version": "1.0.4",
 	"licence": "MIT",
-	"publishConfig": {
-		"access": "public"
-	},
+	"type": "module",
 	"main": "./config.js",
 	"exports": {
 		".": "./config.js"
@@ -17,5 +15,9 @@
 	},
 	"peerDependencies": {
 		"@stefanprobst/eslint-config": "workspace:*"
+	},
+	"devDependencies": {
+		"@types/eslint": "^9.6.0",
+		"globals": "^15.8.0"
 	}
 }

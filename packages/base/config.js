@@ -1,100 +1,112 @@
-const project = ["./tsconfig.json"];
+import { FlatCompat } from "@eslint/eslintrc";
+import js from "@eslint/js";
+import prettier from "eslint-config-prettier";
+import importPlugin from "eslint-plugin-import-x";
+import * as regexpPlugin from "eslint-plugin-regexp";
+import importSortPlugin from "eslint-plugin-simple-import-sort";
+import globals from "globals";
+import ts from "typescript-eslint";
 
-/** @type {import('eslint').Linter.Config} */
-const config = {
-	root: true,
-	reportUnusedDisableDirectives: true,
-	extends: [
-		"eslint:recommended",
-		"plugin:@typescript-eslint/recommended-type-checked",
-		"plugin:@typescript-eslint/stylistic-type-checked",
-		"plugin:typescript-enum/recommended",
-		"plugin:import/recommended",
-		"plugin:import/typescript",
-		"prettier",
-	],
-	plugins: ["simple-import-sort"],
-	env: {
-		browser: true,
-		es2022: true,
-		node: true,
-	},
-	parserOptions: {
-		ecmaVersion: 2023,
-		project,
-	},
-	settings: {
-		"import/internal-regex": "^@/",
-		"import/parsers": {
-			"@typescript-eslint/parser": [".ts", ".tsx", ".js", ".mjs", ".cjs", ".mts", ".cts"],
+const compat = new FlatCompat({
+	baseDirectory: import.meta.dirname,
+});
+
+const config = ts.config(
+	{
+		linterOptions: {
+			reportUnusedDisableDirectives: true,
 		},
-		"import/resolver": {
-			typescript: {
-				project,
-				alwaysTryTypes: true,
+	},
+	js.configs.recommended,
+	...ts.configs.strictTypeChecked,
+	...ts.configs.stylisticTypeChecked,
+	{
+		languageOptions: {
+			globals: {
+				...globals["shared-node-browser"],
+				// ...globals.browser,
+				// ...globals.nodeBuiltin,
+			},
+			parserOptions: {
+				projectService: true,
+				// tsconfigRootDir: import.meta.dirname,
 			},
 		},
+		rules: {
+			"arrow-body-style": ["error", "always"],
+			"consistent-return": "error",
+			eqeqeq: ["error", "always", { null: "ignore" }],
+			"no-console": ["warn", { allow: ["warn", "error"] }],
+			"no-implicit-coercion": "error",
+			"no-param-reassign": "error",
+			"no-restricted-globals": ["error", { name: "isNaN", message: "Use Number.isNaN instead." }],
+			"no-throw-literal": "error",
+			"prefer-arrow-callback": ["error", { allowNamedFunctions: true }],
+			"require-atomic-updates": "error",
+			"@typescript-eslint/array-type": ["error", { default: "generic" }],
+			"@typescript-eslint/consistent-type-exports": [
+				"error",
+				{ fixMixedExportsWithInlineTypeSpecifier: true },
+			],
+			"@typescript-eslint/consistent-type-imports": ["error", { fixStyle: "inline-type-imports" }],
+			"@typescript-eslint/explicit-module-boundary-types": "error",
+			"@typescript-eslint/no-empty-interface": ["error", { allowSingleExtends: true }],
+			"@typescript-eslint/no-import-type-side-effects": "error",
+			"@typescript-eslint/no-namespace": ["error", { allowDeclarations: true }],
+			"@typescript-eslint/no-unnecessary-condition": "error",
+			"@typescript-eslint/no-unused-vars": [
+				"error",
+				{ argsIgnorePattern: "^_", varsIgnorePattern: "^_" },
+			],
+			"@typescript-eslint/no-unnecessary-template-expression": "error",
+			"@typescript-eslint/require-array-sort-compare": "error",
+			"@typescript-eslint/sort-type-constituents": "error",
+			"@typescript-eslint/strict-boolean-expressions": "error",
+			"@typescript-eslint/switch-exhaustiveness-check": "error",
+		},
 	},
-	rules: {
-		"arrow-body-style": ["error", "always"],
-		"consistent-return": "error",
-		eqeqeq: ["error", "always", { null: "ignore" }],
-		"no-console": ["warn", { allow: ["warn", "error"] }],
-		"no-implicit-coercion": "error",
-		"no-param-reassign": "error",
-		"no-restricted-globals": ["error", { name: "isNaN", message: "Use Number.isNaN instead." }],
-		"no-throw-literal": "error",
-		"prefer-arrow-callback": ["error", { allowNamedFunctions: true }],
-		"require-atomic-updates": "error",
-		"@typescript-eslint/array-type": ["error", { default: "generic" }],
-		"@typescript-eslint/consistent-type-exports": [
-			"error",
-			{ fixMixedExportsWithInlineTypeSpecifier: true },
-		],
-		"@typescript-eslint/consistent-type-imports": ["error", { fixStyle: "inline-type-imports" }],
-		"@typescript-eslint/explicit-module-boundary-types": "error",
-		"@typescript-eslint/no-empty-interface": ["error", { allowSingleExtends: true }],
-		"@typescript-eslint/no-import-type-side-effects": "error",
-		/**
-		 * JSX event handler props generally only accept `void` return type, but inline react server
-		 * actions must be async. also, some libraries like `react-hook-form` expect to be able to
-		 * pass promise-returning callbacks.
-		 */
-		"@typescript-eslint/no-misused-promises": [
-			"error",
-			{
-				checksVoidReturn: {
-					arguments: false,
-					attributes: false,
+	// @ts-expect-error Incompatible ecmascript version types.
+	...compat.config(importPlugin.configs.recommended),
+	...compat.config(importPlugin.configs.typescript),
+	{
+		settings: {
+			"import-x/internal-regex": "^[@~]/",
+			// "import-x/parsers:": {
+			// 	'@typescript-eslint/parser': [".ts", ".tsx"]
+			// },
+			"import-x/resolver": {
+				typescript: {
+					alwaysTryTypes: true,
+					// extensions: [".js", ".ts", ".tsx"],
+					project: true,
 				},
-			},
-		],
-		"@typescript-eslint/no-namespace": ["error", { allowDeclarations: true }],
-		"@typescript-eslint/no-unnecessary-condition": "error",
-		"@typescript-eslint/no-unused-vars": [
-			"error",
-			{ argsIgnorePattern: "^_", varsIgnorePattern: "^_" },
-		],
-		"@typescript-eslint/no-useless-template-literals": "error",
-		"@typescript-eslint/require-array-sort-compare": "error",
-		"@typescript-eslint/sort-type-constituents": "error",
-		"@typescript-eslint/strict-boolean-expressions": "error",
-		"@typescript-eslint/switch-exhaustiveness-check": "error",
-		"import/first": "error",
-		"import/newline-after-import": "error",
-		"import/no-anonymous-default-export": "error",
-		"import/no-duplicates": ["error", { "prefer-inline": true }],
-		"simple-import-sort/imports": "error",
-		"simple-import-sort/exports": "error",
-	},
-	overrides: [
-		{
-			files: ["./**/*.cjs"],
-			rules: {
-				"@typescript-eslint/no-var-requires": "off",
+				// node: true,
 			},
 		},
-	],
-};
+		rules: {
+			"import-x/first": "error",
+			"import-x/newline-after-import": "error",
+			"import-x/no-anonymous-default-export": "error",
+			"import-x/no-duplicates": ["error", { "prefer-inline": true }],
+		},
+	},
+	{
+		files: ["**/*.cjs"],
+		rules: {
+			"@typescript-eslint/no-var-requires": "off",
+		},
+	},
+	{
+		plugins: {
+			"simple-import-sort": importSortPlugin,
+		},
+		rules: {
+			"simple-import-sort/imports": "error",
+			"simple-import-sort/exports": "error",
+		},
+	},
+	regexpPlugin.configs["flat/recommended"],
+	prettier,
+);
 
-module.exports = config;
+export default config;
