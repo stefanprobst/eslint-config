@@ -1,5 +1,12 @@
 # @stefanprobst/eslint-config-mdx
 
+## 2.0.2
+
+### Patch Changes
+
+- [`c6b220b`](https://github.com/stefanprobst/eslint-config/commit/c6b220b1ceafec91992c3593e572140daefdbcdb)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - fix: use mdx flat config
+
 ## 2.0.1
 
 ### Patch Changes
