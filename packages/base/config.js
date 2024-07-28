@@ -50,7 +50,7 @@ const config = ts.config(
 			],
 			"@typescript-eslint/consistent-type-imports": ["error", { fixStyle: "inline-type-imports" }],
 			"@typescript-eslint/explicit-module-boundary-types": "error",
-			"@typescript-eslint/no-empty-interface": ["error", { allowSingleExtends: true }],
+			"@typescript-eslint/no-empty-object-type": ["error", { allowInterfaces: "always" }],
 			"@typescript-eslint/no-import-type-side-effects": "error",
 			"@typescript-eslint/no-namespace": ["error", { allowDeclarations: true }],
 			"@typescript-eslint/no-unnecessary-condition": "error",
