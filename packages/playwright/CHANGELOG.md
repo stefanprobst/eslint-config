@@ -1,5 +1,14 @@
 # @stefanprobst/eslint-config-playwright
 
+## 2.0.0
+
+### Patch Changes
+
+- Updated dependencies
+  [[`6fd850a`](https://github.com/stefanprobst/eslint-config/commit/6fd850ab1ed7da70c1db63fafd14e912796ae810),
+  [`75112ba`](https://github.com/stefanprobst/eslint-config/commit/75112ba448aeba4a12ccce8a688bf533caa28479)]:
+  - @stefanprobst/eslint-config@2.0.0
+
 ## 1.0.5
 
 ### Patch Changes
