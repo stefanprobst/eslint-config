@@ -60,7 +60,6 @@ const config = ts.config(
 			],
 			"@typescript-eslint/no-unnecessary-template-expression": "error",
 			"@typescript-eslint/require-array-sort-compare": "error",
-			"@typescript-eslint/sort-type-constituents": "error",
 			"@typescript-eslint/strict-boolean-expressions": "error",
 			"@typescript-eslint/switch-exhaustiveness-check": "error",
 		},
