@@ -1,6 +1,6 @@
 {
 	"name": "@stefanprobst/eslint-config-next",
-	"version": "8.0.0",
+	"version": "8.0.1",
 	"licence": "MIT",
 	"type": "module",
 	"engines": {
