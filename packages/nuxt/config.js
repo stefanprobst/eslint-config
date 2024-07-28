@@ -31,7 +31,10 @@ const config = ts.config(
 			 * Allow single emit function as `defineEmits` interface.
 			 */
 			"@typescript-eslint/prefer-function-type": "off",
-			"vuejs-accessibility/anchor-has-content": ["error", { components: ["NuxtLink"] }],
+			"vuejs-accessibility/anchor-has-content": [
+				"error",
+				{ components: ["NuxtLink", "NuxtLocaleLink"] },
+			],
 		},
 	},
 	{
