@@ -1,5 +1,17 @@
 # @stefanprobst/eslint-config-next
 
+## 8.0.2
+
+### Patch Changes
+
+- [`2d61932`](https://github.com/stefanprobst/eslint-config/commit/2d61932a36ac0b1af2b4b276e063a650223260c0)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - fix: publish types
+
+- Updated dependencies
+  [[`2d61932`](https://github.com/stefanprobst/eslint-config/commit/2d61932a36ac0b1af2b4b276e063a650223260c0)]:
+  - @stefanprobst/eslint-config-react@2.0.2
+  - @stefanprobst/eslint-config@2.0.2
+
 ## 8.0.1
 
 ### Patch Changes
