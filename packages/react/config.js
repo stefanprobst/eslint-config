@@ -1,7 +1,6 @@
 import { FlatCompat } from "@eslint/eslintrc";
 // import jsxA11yPlugin from "eslint-plugin-jsx-a11y";
 // import reactPlugin from "eslint-plugin-react";
-// @ts-expect-error Missing declaration file.
 import reactCompilerPlugin from "eslint-plugin-react-compiler";
 // import reactHooksPlugin from "eslint-plugin-react-hooks";
 // import globals from "globals";
