@@ -55,6 +55,7 @@ const config = ts.config(
 			"@typescript-eslint/no-empty-object-type": ["error", { allowInterfaces: "always" }],
 			"@typescript-eslint/no-import-type-side-effects": "error",
 			"@typescript-eslint/no-namespace": ["error", { allowDeclarations: true }],
+			'@typescript-eslint/no-non-null-assertion': 'off',
 			"@typescript-eslint/no-unnecessary-condition": "error",
 			"@typescript-eslint/no-unused-vars": [
 				"error",
