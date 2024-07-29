@@ -1,9 +1,9 @@
 import { FlatCompat } from "@eslint/eslintrc";
+import tsParser from '@typescript-eslint/parser'
 import vuePlugin from "eslint-plugin-vue";
 // import vueAccessibilityPlugin from "eslint-plugin-vuejs-accessibility";
 // import globals from "globals";
 import ts from "typescript-eslint";
-
 const compat = new FlatCompat({
 	baseDirectory: import.meta.dirname,
 });
@@ -40,12 +40,12 @@ const config = ts.config(
 			"@typescript-eslint/no-unsafe-member-access": "off",
 			"@typescript-eslint/no-unsafe-return": "off",
 
+			"vue/block-order": ["error", { order: ["script", "template", "style"] }],
 			"vue/component-name-in-template-casing": [
 				"error",
 				"PascalCase",
 				{ registeredComponentsOnly: false },
 			],
-			"vue/component-tags-order": ["error", { order: ["script", "template", "style"] }],
 			"vue/multi-word-component-names": "off",
 			"vue/padding-line-between-blocks": "error",
 			"vue/require-default-prop": "off",
