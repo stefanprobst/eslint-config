@@ -24,6 +24,7 @@ const config = ts.config(
 		files: ["**/*.vue"],
 		languageOptions: {
 			parserOptions: {
+				ecmaVersion: 2023,
 				parser: "@typescript-eslint/parser",
 			},
 		},

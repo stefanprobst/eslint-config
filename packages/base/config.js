@@ -22,7 +22,9 @@ const config = ts.config(
 	...ts.configs.stylisticTypeChecked,
 	{
 		languageOptions: {
+			ecmaVersion: 2023,
 			globals: {
+				...globals["es2023"],
 				...globals["shared-node-browser"],
 				// ...globals.browser,
 				// ...globals.nodeBuiltin,
