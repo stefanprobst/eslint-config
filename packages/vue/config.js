@@ -25,7 +25,7 @@ const config = ts.config(
 		languageOptions: {
 			parserOptions: {
 				ecmaVersion: 2023,
-				parser: "@typescript-eslint/parser",
+				parser: tsParser,
 			},
 		},
 		rules: {
