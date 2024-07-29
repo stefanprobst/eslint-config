@@ -1,5 +1,5 @@
 import { FlatCompat } from "@eslint/eslintrc";
-import tsParser from '@typescript-eslint/parser'
+import tsParser from "@typescript-eslint/parser";
 import vuePlugin from "eslint-plugin-vue";
 // import vueAccessibilityPlugin from "eslint-plugin-vuejs-accessibility";
 // import globals from "globals";
