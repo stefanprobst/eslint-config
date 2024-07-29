@@ -1,6 +1,6 @@
 {
 	"name": "@stefanprobst/eslint-config-node",
-	"version": "5.0.2",
+	"version": "5.0.3",
 	"licence": "MIT",
 	"type": "module",
 	"engines": {
