@@ -30,7 +30,7 @@ importers:
         specifier: ^1.0.3
         version: 1.0.3(typescript@5.5.4)
       '@types/node':
-        specifier: ^20.14.15
+        specifier: ^20.15.0
         version: 20.15.0
       is-ci:
         specifier: ^3.0.1
