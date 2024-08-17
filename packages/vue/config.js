@@ -1,12 +1,8 @@
-import { FlatCompat } from "@eslint/eslintrc";
 import tsParser from "@typescript-eslint/parser";
 import vuePlugin from "eslint-plugin-vue";
-// import vueAccessibilityPlugin from "eslint-plugin-vuejs-accessibility";
+import vueAccessibilityPlugin from "eslint-plugin-vuejs-accessibility";
 // import globals from "globals";
 import ts from "typescript-eslint";
-const compat = new FlatCompat({
-	baseDirectory: import.meta.dirname,
-});
 
 const config = ts.config(
 	// {
@@ -18,8 +14,7 @@ const config = ts.config(
 	// 	},
 	// },
 	...vuePlugin.configs["flat/recommended"],
-	// @ts-expect-error Type incompatibility between `eslint` and `typescript-eslint`.
-	...compat.extends("plugin:vuejs-accessibility/recommended"),
+	...vueAccessibilityPlugin.configs["flat/recommended"],
 	{
 		files: ["**/*.vue"],
 		languageOptions: {
@@ -44,7 +39,15 @@ const config = ts.config(
 			"vue/component-name-in-template-casing": [
 				"error",
 				"PascalCase",
-				{ registeredComponentsOnly: false },
+				{
+					/**
+					 * Handle namespaced components.
+					 *
+					 * @see https://github.com/vuejs/eslint-plugin-vue/issues/2405
+					 */
+					ignores: ["/\\./"],
+					registeredComponentsOnly: false,
+				},
 			],
 			"vue/multi-word-component-names": "off",
 			"vue/padding-line-between-blocks": "error",

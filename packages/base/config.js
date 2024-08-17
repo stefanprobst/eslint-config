@@ -36,7 +36,7 @@ const config = ts.config(
 		},
 		rules: {
 			"arrow-body-style": ["error", "always"],
-			"consistent-return": "error",
+			curly: "error",
 			eqeqeq: ["error", "always", { null: "ignore" }],
 			"no-console": ["warn", { allow: ["warn", "error"] }],
 			"no-implicit-coercion": "error",
@@ -51,7 +51,7 @@ const config = ts.config(
 				{ fixMixedExportsWithInlineTypeSpecifier: true },
 			],
 			"@typescript-eslint/consistent-type-imports": ["error", { fixStyle: "inline-type-imports" }],
-			"@typescript-eslint/explicit-module-boundary-types": "error",
+			// "@typescript-eslint/explicit-module-boundary-types": "error",
 			"@typescript-eslint/no-empty-object-type": ["error", { allowInterfaces: "always" }],
 			"@typescript-eslint/no-import-type-side-effects": "error",
 			"@typescript-eslint/no-namespace": ["error", { allowDeclarations: true }],
@@ -67,7 +67,7 @@ const config = ts.config(
 			"@typescript-eslint/switch-exhaustiveness-check": "error",
 		},
 	},
-	// @ts-expect-error Incompatible ecmascript version types.
+	// @ts-expect-error Type incompatibility between `eslint` and `typescript-eslint`.
 	...compat.config(importPlugin.configs.recommended),
 	...compat.config(importPlugin.configs.typescript),
 	{

@@ -6,13 +6,13 @@
 		"node": "20.x",
 		"pnpm": "9.x"
 	},
-	"packageManager": "pnpm@9.6.0",
+	"packageManager": "pnpm@9.7.1",
 	"scripts": {
 		"changeset:add": "changeset add",
 		"changeset:status": "changeset status --verbose",
 		"ci:release": "changeset publish",
 		"ci:version": "changeset version && prettier \"**/CHANGELOG.md\" --write",
-		"format:check": "prettier . --cache --check --ignore-path ./.gitignore",
+		"format:check": "prettier . --cache --cache-location ./.prettiercache --check --ignore-path ./.gitignore",
 		"format:fix": "pnpm run format:check --write",
 		"prepare": "run-s setup",
 		"setup": "is-ci || simple-git-hooks",
@@ -26,9 +26,9 @@
 		"@stefanprobst/commitlint-config": "^1.0.3",
 		"@stefanprobst/prettier-config": "^4.0.1",
 		"@stefanprobst/tsconfig-lib": "^1.0.3",
-		"@types/node": "^20.14.12",
+		"@types/node": "^20.14.15",
 		"is-ci": "^3.0.1",
-		"lint-staged": "^15.2.7",
+		"lint-staged": "^15.2.9",
 		"npm-run-all2": "^6.2.2",
 		"prettier": "^3.3.3",
 		"simple-git-hooks": "^2.11.1",
@@ -36,14 +36,14 @@
 	},
 	"pnpm": {
 		"overrides": {
-			"@typescript-eslint/utils": "rc-v8"
+			"@typescript-eslint/utils": "^8.1.0"
 		}
 	},
 	"commitlint": {
 		"extends": "@stefanprobst/commitlint-config"
 	},
 	"lint-staged": {
-		"*": "prettier --cache --ignore-unknown --write"
+		"*": "prettier --cache --cache-location ./.prettiercache --ignore-unknown --write"
 	},
 	"prettier": "@stefanprobst/prettier-config",
 	"simple-git-hooks": {

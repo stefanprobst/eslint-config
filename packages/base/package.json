@@ -3,13 +3,16 @@
 	"version": "2.0.3",
 	"licence": "MIT",
 	"type": "module",
+	"engines": {
+		"node": ">=20.11"
+	},
 	"main": "./config.js",
 	"exports": {
 		".": "./config.js"
 	},
 	"files": [
-		"config.js",
-		"config.d.ts"
+		"./config.d.ts",
+		"./config.js"
 	],
 	"dependencies": {
 		"@eslint/eslintrc": "^3.1.0",
@@ -20,7 +23,7 @@
 		"eslint-plugin-import-x": "^3.1.0",
 		"eslint-plugin-regexp": "^2.6.0",
 		"eslint-plugin-simple-import-sort": "^12.1.1",
-		"typescript-eslint": "rc-v8"
+		"typescript-eslint": "^8.1.0"
 	},
 	"peerDependencies": {
 		"eslint": "9.x",
@@ -32,6 +35,6 @@
 		"@types/eslint-config-prettier": "^6.11.3",
 		"@types/eslint__eslintrc": "^2.1.2",
 		"@types/eslint__js": "^8.42.3",
-		"globals": "^15.8.0"
+		"globals": "^15.9.0"
 	}
 }

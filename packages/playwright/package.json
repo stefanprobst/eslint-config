@@ -11,8 +11,8 @@
 		".": "./config.js"
 	},
 	"files": [
-		"config.js",
-		"config.d.ts"
+		"./config.d.ts",
+		"./config.js"
 	],
 	"dependencies": {
 		"eslint-plugin-playwright": "^1.6.2"
@@ -22,6 +22,6 @@
 	},
 	"devDependencies": {
 		"@types/eslint": "^9.6.0",
-		"globals": "^15.8.0"
+		"globals": "^15.9.0"
 	}
 }

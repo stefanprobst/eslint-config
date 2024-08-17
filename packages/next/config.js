@@ -1,5 +1,6 @@
 import { FlatCompat } from "@eslint/eslintrc";
 // import nextPlugin from "@next/eslint-plugin-next";
+// import globals from "globals";
 import ts from "typescript-eslint";
 
 const compat = new FlatCompat({
