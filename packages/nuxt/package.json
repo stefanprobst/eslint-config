@@ -15,7 +15,7 @@
 		"./config.js"
 	],
 	"dependencies": {
-		"@nuxt/eslint-plugin": "^0.5.0"
+		"@nuxt/eslint-plugin": "^0.5.1"
 	},
 	"peerDependencies": {
 		"@stefanprobst/eslint-config": "workspace:*",
