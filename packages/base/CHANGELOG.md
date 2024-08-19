@@ -1,5 +1,12 @@
 # @stefanprobst/eslint-config
 
+## 2.0.4
+
+### Patch Changes
+
+- [`ca893a1`](https://github.com/stefanprobst/eslint-config/commit/ca893a151738058aaf694801a9bed1c45c9003da)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - update
+
 ## 2.0.3
 
 ### Patch Changes

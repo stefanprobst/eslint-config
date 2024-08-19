@@ -1,6 +1,6 @@
 {
 	"name": "@stefanprobst/eslint-config-tailwindcss",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"licence": "MIT",
 	"type": "module",
 	"engines": {
