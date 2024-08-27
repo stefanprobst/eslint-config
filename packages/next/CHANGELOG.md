@@ -1,5 +1,14 @@
 # @stefanprobst/eslint-config-next
 
+## 8.0.6
+
+### Patch Changes
+
+- Updated dependencies
+  [[`a6c5b2c`](https://github.com/stefanprobst/eslint-config/commit/a6c5b2c5793cd22c3dddb89618860d8b2c3d838a)]:
+  - @stefanprobst/eslint-config@2.0.6
+  - @stefanprobst/eslint-config-react@2.0.6
+
 ## 8.0.5
 
 ### Patch Changes

@@ -1,5 +1,12 @@
 # @stefanprobst/eslint-config
 
+## 2.0.6
+
+### Patch Changes
+
+- [`a6c5b2c`](https://github.com/stefanprobst/eslint-config/commit/a6c5b2c5793cd22c3dddb89618860d8b2c3d838a)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - fix: update import plugin
+
 ## 2.0.5
 
 ### Patch Changes
