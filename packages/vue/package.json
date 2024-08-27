@@ -22,7 +22,7 @@
 		"@stefanprobst/eslint-config": "workspace:*"
 	},
 	"devDependencies": {
-		"@types/eslint": "^9.6.0",
+		"@types/eslint": "^9.6.1",
 		"globals": "^15.9.0"
 	}
 }

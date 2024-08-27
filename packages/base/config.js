@@ -67,9 +67,8 @@ const config = ts.config(
 			"@typescript-eslint/switch-exhaustiveness-check": "error",
 		},
 	},
-	// @ts-expect-error Type incompatibility between `eslint` and `typescript-eslint`.
-	...compat.config(importPlugin.configs.recommended),
-	...compat.config(importPlugin.configs.typescript),
+	...importPlugin.flatConfigs.recommended,
+	...importPlugin.flatConfigs.typescript,
 	{
 		settings: {
 			"import-x/internal-regex": "^[@~]/",
