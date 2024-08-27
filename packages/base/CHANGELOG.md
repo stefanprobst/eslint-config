@@ -1,5 +1,12 @@
 # @stefanprobst/eslint-config
 
+## 2.0.5
+
+### Patch Changes
+
+- [`4cbed19`](https://github.com/stefanprobst/eslint-config/commit/4cbed19ddfab5f7a4a414972e279e44815f1d6e7)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - update import plugin, update deps
+
 ## 2.0.4
 
 ### Patch Changes

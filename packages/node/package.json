@@ -1,6 +1,6 @@
 {
 	"name": "@stefanprobst/eslint-config-node",
-	"version": "1.0.13",
+	"version": "1.0.14",
 	"licence": "MIT",
 	"type": "module",
 	"engines": {
