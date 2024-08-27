@@ -1,4 +1,3 @@
-import { FlatCompat } from "@eslint/eslintrc";
 import js from "@eslint/js";
 import prettier from "eslint-config-prettier";
 import importPlugin from "eslint-plugin-import-x";
@@ -6,10 +5,6 @@ import * as regexpPlugin from "eslint-plugin-regexp";
 import importSortPlugin from "eslint-plugin-simple-import-sort";
 import globals from "globals";
 import ts from "typescript-eslint";
-
-const compat = new FlatCompat({
-	baseDirectory: import.meta.dirname,
-});
 
 const config = ts.config(
 	{
@@ -20,6 +15,8 @@ const config = ts.config(
 	js.configs.recommended,
 	...ts.configs.strictTypeChecked,
 	...ts.configs.stylisticTypeChecked,
+	importPlugin.flatConfigs.recommended,
+	importPlugin.flatConfigs.typescript,
 	{
 		languageOptions: {
 			ecmaVersion: 2023,
@@ -67,8 +64,6 @@ const config = ts.config(
 			"@typescript-eslint/switch-exhaustiveness-check": "error",
 		},
 	},
-	...importPlugin.flatConfigs.recommended,
-	...importPlugin.flatConfigs.typescript,
 	{
 		settings: {
 			"import-x/internal-regex": "^[@~]/",
