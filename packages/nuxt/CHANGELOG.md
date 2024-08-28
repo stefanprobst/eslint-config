@@ -1,5 +1,13 @@
 # @stefanprobst/eslint-config-nuxt
 
+## 2.0.8
+
+### Patch Changes
+
+- Updated dependencies
+  [[`f02382a`](https://github.com/stefanprobst/eslint-config/commit/f02382a251530a83ba33e8732e5cfb42264ea00e)]:
+  - @stefanprobst/eslint-config-vue@2.0.7
+
 ## 2.0.7
 
 ### Patch Changes

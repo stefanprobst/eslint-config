@@ -1,5 +1,13 @@
 # @stefanprobst/eslint-config-vue
 
+## 2.0.7
+
+### Patch Changes
+
+- [`f02382a`](https://github.com/stefanprobst/eslint-config/commit/f02382a251530a83ba33e8732e5cfb42264ea00e)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - disable type-aware lint rules in astro
+  and vue
+
 ## 2.0.6
 
 ### Patch Changes
