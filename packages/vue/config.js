@@ -21,20 +21,14 @@ const config = ts.config(
 			parserOptions: {
 				ecmaVersion: 2023,
 				parser: tsParser,
+				projectService: null,
 			},
 		},
+		/**
+		 * @see https://github.com/vuejs/vue-eslint-parser/issues/104
+		 */
+		...ts.configs.disableTypeChecked,
 		rules: {
-			/**
-			 * @see https://github.com/vuejs/vue-eslint-parser/issues/104
-			 */
-			"@typescript-eslint/no-unsafe-argument": "off",
-			"@typescript-eslint/no-unsafe-assignment": "off",
-			"@typescript-eslint/no-unsafe-call": "off",
-			"@typescript-eslint/no-unsafe-declaration-merging": "off",
-			"@typescript-eslint/no-unsafe-enum-comparison": "off",
-			"@typescript-eslint/no-unsafe-member-access": "off",
-			"@typescript-eslint/no-unsafe-return": "off",
-
 			"vue/block-order": ["error", { order: ["script", "template", "style"] }],
 			"vue/component-name-in-template-casing": [
 				"error",

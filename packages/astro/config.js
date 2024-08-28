@@ -40,11 +40,11 @@ const config = ts.config(
 	},
 	/** @see https://github.com/ota-meshi/eslint-plugin-astro/issues/402#issuecomment-2195847165 */
 	{
-		files: ["**/*.astro/*.ts"],
+		files: ["**/*.astro", "**/*.astro/*.js", "**/*.astro/*.ts"],
 		languageOptions: {
 			parserOptions: {
 				ecmaVersion: 2023,
-				project: null,
+				projectService: null,
 			},
 		},
 		...ts.configs.disableTypeChecked,
