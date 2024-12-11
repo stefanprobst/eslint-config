@@ -7,17 +7,13 @@ import globals from "globals";
 import ts from "typescript-eslint";
 
 const config = ts.config(
-	{
-		linterOptions: {
-			reportUnusedDisableDirectives: true,
-		},
-	},
 	js.configs.recommended,
 	...ts.configs.strictTypeChecked,
 	...ts.configs.stylisticTypeChecked,
 	importPlugin.flatConfigs.recommended,
 	importPlugin.flatConfigs.typescript,
 	{
+		name: "acdh-oeaw/base-config",
 		languageOptions: {
 			ecmaVersion: 2023,
 			globals: {
@@ -31,16 +27,18 @@ const config = ts.config(
 				// tsconfigRootDir: import.meta.dirname,
 			},
 		},
+		linterOptions: {
+			reportUnusedDisableDirectives: true,
+		},
 		rules: {
-			"arrow-body-style": ["error", "always"],
-			curly: "error",
 			eqeqeq: ["error", "always", { null: "ignore" }],
 			"no-console": ["warn", { allow: ["warn", "error"] }],
 			"no-implicit-coercion": "error",
 			"no-param-reassign": "error",
 			"no-restricted-globals": ["error", { name: "isNaN", message: "Use Number.isNaN instead." }],
 			"no-throw-literal": "error",
-			"prefer-arrow-callback": ["error", { allowNamedFunctions: true }],
+			"prefer-const": "error",
+			"prefer-template": "error",
 			"require-atomic-updates": "error",
 			"@typescript-eslint/array-type": ["error", { default: "generic" }],
 			"@typescript-eslint/consistent-type-exports": [
@@ -59,12 +57,16 @@ const config = ts.config(
 				{ argsIgnorePattern: "^_", varsIgnorePattern: "^_" },
 			],
 			"@typescript-eslint/no-unnecessary-template-expression": "error",
-			"@typescript-eslint/require-array-sort-compare": "error",
-			"@typescript-eslint/strict-boolean-expressions": "error",
+			// "@typescript-eslint/require-array-sort-compare": "error",
+			// "@typescript-eslint/strict-boolean-expressions": "error",
 			"@typescript-eslint/switch-exhaustiveness-check": "error",
 		},
 	},
 	{
+		name: "acdh-oeaw/base-config/import",
+		plugins: {
+			"simple-import-sort": importSortPlugin,
+		},
 		settings: {
 			"import-x/internal-regex": "^[@~]/",
 			// "import-x/parsers:": {
@@ -84,25 +86,36 @@ const config = ts.config(
 			"import-x/newline-after-import": "error",
 			"import-x/no-anonymous-default-export": "error",
 			"import-x/no-duplicates": ["error", { "prefer-inline": true }],
+			"simple-import-sort/imports": "error",
+			"simple-import-sort/exports": "error",
+
+			/** Already handled by typescript. */
+			"import-x/default": "off",
+			"import-x/named": "off",
+			"import-x/namespace": "off",
 		},
 	},
 	{
+		name: "acdh-oeaw/base-config/commonjs",
 		files: ["**/*.cjs"],
 		rules: {
 			"@typescript-eslint/no-var-requires": "off",
 		},
 	},
-	{
-		plugins: {
-			"simple-import-sort": importSortPlugin,
-		},
-		rules: {
-			"simple-import-sort/imports": "error",
-			"simple-import-sort/exports": "error",
-		},
-	},
 	regexpPlugin.configs["flat/recommended"],
 	prettier,
+	{
+		/**
+		 * These are intentionally placed after the prettier config.
+		 *
+		 * @see https://github.com/prettier/eslint-config-prettier#special-rules
+		 */
+		rules: {
+			// "arrow-body-style": ["error", "always"],
+			curly: ["error", "all"],
+			"prefer-arrow-callback": ["error", { allowNamedFunctions: true }],
+		},
+	},
 );
 
 export default config;
