@@ -1,5 +1,16 @@
 # @stefanprobst/eslint-config-tailwindcss
 
+## 1.0.4
+
+### Patch Changes
+
+- [`c41739d`](https://github.com/stefanprobst/eslint-config/commit/c41739dd26d0ea54477712731f1ded363fc1ea6b)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - update
+
+- Updated dependencies
+  [[`c41739d`](https://github.com/stefanprobst/eslint-config/commit/c41739dd26d0ea54477712731f1ded363fc1ea6b)]:
+  - @stefanprobst/eslint-config@2.0.7
+
 ## 1.0.3
 
 ### Patch Changes

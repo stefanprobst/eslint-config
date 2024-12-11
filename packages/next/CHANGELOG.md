@@ -1,5 +1,17 @@
 # @stefanprobst/eslint-config-next
 
+## 8.0.7
+
+### Patch Changes
+
+- [`c41739d`](https://github.com/stefanprobst/eslint-config/commit/c41739dd26d0ea54477712731f1ded363fc1ea6b)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - update
+
+- Updated dependencies
+  [[`c41739d`](https://github.com/stefanprobst/eslint-config/commit/c41739dd26d0ea54477712731f1ded363fc1ea6b)]:
+  - @stefanprobst/eslint-config-react@2.0.7
+  - @stefanprobst/eslint-config@2.0.7
+
 ## 8.0.6
 
 ### Patch Changes
